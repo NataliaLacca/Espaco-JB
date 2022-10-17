@@ -11,9 +11,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
 }
 
@@ -32,7 +30,9 @@ a:hover {
 /* Fundo do site */
 body {
   background-attachment: fixed;
-  background-color: rgb(243, 184, 178);
+  background-color: rgb(222, 176, 176);
+  /* background-image: url(./src/picture/background/abstract_pink_03.jpg);*/
+  width: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,144 +51,149 @@ body {
 }
 
 /* Cabeçalho */
-#wrap > header {
+#wrap>header {
   background-color: rgb(251, 208, 251);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 0.5rem;
-  margin: 0.5rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: 8px;
   margin-bottom: 0;
   display: flex;
   align-items: center;
 }
 
 /* Logotipo */
-#wrap > header img {
+#wrap>header img {
   display: block;
-  height: 5rem;
-  margin: 0.5rem 0.8rem 0.5rem 0.5rem;
+  border-radius: 15px;
+  height: 80px;
+  margin: 8px 12px 8px 8px;
 }
 
+
+
 /* Título */
-#wrap > header h3 {
+#wrap>header h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 10px;
-  text-align: right;
-  font-size: 1.75rem;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 25px;
   color: purple;
 }
 
 /* Slogan está oculto */
-#wrap > header span {
+#wrap>header span {
   display: block;
-  font-size: 0.8rem;
+  padding-top: 15px;
+  font-size: 12px;
   font-weight: normal;
 }
 
 /* Menu principal */
-#wrap > nav {
+#wrap>nav {
   background-color: rgb(251, 208, 251);
-  border-radius: 0.5rem;
-  margin: 0.5rem;
+  border-radius: 8px;
+  margin: 8px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-#wrap > nav a {
-  padding: 0.5rem 0.8rem;
+#wrap>nav a {
+  padding: 8px 12px;
   color: purple;
-  transition: 0.2s;
+  transition: 2ms;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#wrap > nav a:first-child {
+#wrap>nav a:first-child {
   margin-right: auto;
 }
 
-#wrap > nav a:hover {
+#wrap>nav a:hover {
   color: rgb(213, 0, 213);
   text-decoration: none;
 }
 
-#wrap > nav i {
-  font-size: 2rem;
+#wrap>nav i {
+  font-size: 20px;
 }
 
-#wrap > nav span {
+#wrap>nav span {
   display: block;
-  margin-top: 0.2rem;
+  margin-top: 3px;
 }
 
 /* Ajusta menu em telas maiores */
 @media (min-width: 480px) {
-  #wrap > nav a {
+  #wrap>nav a {
     flex-direction: row;
   }
 
-  #wrap > nav i {
-    font-size: 1.2rem;
+  #wrap>nav i {
+    font-size: 19px;
   }
 
-  #wrap > nav span {
+  #wrap>nav span {
     display: inline-block;
     margin-top: 0;
-    margin-left: 0.25rem;
+    margin-left: 4px;
   }
 }
 
 /* Conteúdo */
-#wrap > main {
+#wrap>main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-#wrap > main article,
-#wrap > main aside {
-  background-color: rgba(231, 209, 233, 0.955);
+#wrap>main article,
+#wrap>main aside {
+  background-color: rgb(231, 209, 233);
   overflow: auto;
-  border-radius: 0.5rem;
-  margin: 0 0.5rem;
-  padding: 0 1rem;
+  border-radius: 8px;
+  margin: 0 8px;
+  padding: 0 16px;
 }
 
-#wrap > main article {
+#wrap>main article {
   flex-grow: 1;
 }
 
-#wrap > main aside {
-  margin-top: 0.5rem;
+#wrap>main aside {
+  margin-top: 8px;
 }
 
 @media (min-width: 768px) {
-  #wrap > main {
+  #wrap>main {
     flex-direction: row;
   }
 
-  #wrap > main article {
+  #wrap>main article {
     flex-grow: 1;
   }
 
-  #wrap > main aside {
+  #wrap>main aside {
     margin: 0;
-    margin-right: 0.5rem;
+    margin-right: 8px;
     min-width: 220px;
     max-width: 220px;
   }
 }
 
 /* Rodapé */
-#wrap > footer {
+#wrap>footer {
   background-color: rgb(251, 208, 251);
-  border-radius: 0.5rem;
-  margin: 0.5rem;
+  border-radius: 8px;
+  margin: 8px;
 }
 
 #ftop {
@@ -199,8 +204,8 @@ body {
 }
 
 #ftop a {
-  font-size: 1.5rem;
-  padding: 0.25rem;
+  font-size: 24px;
+  padding: 4px;
   color: purple;
 }
 
@@ -214,17 +219,17 @@ body {
 }
 
 #fbottom h4 {
-  margin: 0.5rem;
+  margin: 8px;
 }
 
 #fbottom a {
   display: block;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  padding: 8px 8px 8px 16px;
 }
 
-#wrap > span {
+#wrap>span {
   display: block;
   font-size: 0.1px;
 }
