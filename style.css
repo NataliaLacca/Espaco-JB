@@ -31,7 +31,7 @@ a:hover {
 body {
   background-attachment: fixed;
   background-color: rgb(222, 176, 176);
-  /* background-image: url(./src/picture/background/abstract_pink_03.jpg);*/
+  background-image: url(./src/picture/background/abstract_pink_03.jpg);
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -157,7 +157,7 @@ body {
 
 #wrap>main article,
 #wrap>main aside {
-  background-color: rgb(231, 209, 233);
+  background-color: rgb(251, 208, 251);
   overflow: auto;
   border-radius: 8px;
   margin: 0 8px;
@@ -211,6 +211,7 @@ body {
 
 #ftop a:hover {
   color: rgb(213, 0, 213);
+  
 }
 
 #fbottom {
