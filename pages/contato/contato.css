@@ -17,21 +17,21 @@ body {
 
 /* Links */
 a {
-  color: purple;
+  color: rgb(151, 93, 117);
   text-decoration: none;
 }
 
 /* Quando o mouse passar sobre */
 a:hover {
-  color: rgb(235, 49, 235);
+  color: purple;
   text-decoration: underline;
 }
 
 /* Fundo do site */
 body {
   background-attachment: fixed;
-  background-color: rgb(222, 176, 176);
-  /* background-image: url(./src/picture/background/abstract_pink_03.jpg);*/
+  background-color: rgba(222, 176, 176, 0);
+  background-image: url(./src/picture/background/abstract_pink_03.jpg);
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ body {
 
 /* Cabeçalho */
 #wrap>header {
-  background-color: rgb(251, 208, 251);
+  background-color: rgba(251, 208, 251, 0);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,7 +83,7 @@ body {
   margin-right: 10px;
   text-align: center;
   font-size: 25px;
-  color: purple;
+  color: rgb(151, 93, 117);
 }
 
 /* Slogan está oculto */
@@ -96,7 +96,7 @@ body {
 
 /* Menu principal */
 #wrap>nav {
-  background-color: rgb(251, 208, 251);
+  background-color: rgb(255,228,225);
   border-radius: 8px;
   margin: 8px;
   display: flex;
@@ -106,7 +106,7 @@ body {
 
 #wrap>nav a {
   padding: 8px 12px;
-  color: purple;
+  color: rgb(151, 93, 117);
   transition: 2ms;
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@ body {
 }
 
 #wrap>nav a:hover {
-  color: rgb(213, 0, 213);
+  color: purple;
   text-decoration: none;
 }
 
@@ -157,7 +157,7 @@ body {
 
 #wrap>main article,
 #wrap>main aside {
-  background-color: rgb(231, 209, 233);
+  background-color: rgb(255,228,225);
   overflow: auto;
   border-radius: 8px;
   margin: 0 8px;
@@ -191,7 +191,7 @@ body {
 
 /* Rodapé */
 #wrap>footer {
-  background-color: rgb(251, 208, 251);
+  background-color: rgba(251, 208, 251, 0);
   border-radius: 8px;
   margin: 8px;
 }
@@ -206,11 +206,12 @@ body {
 #ftop a {
   font-size: 24px;
   padding: 4px;
-  color: purple;
+  color: rgb(151, 93, 117);
 }
 
 #ftop a:hover {
-  color: rgb(213, 0, 213);
+  color: purple;
+  
 }
 
 #fbottom {
