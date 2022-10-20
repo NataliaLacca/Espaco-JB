@@ -34,41 +34,317 @@
                 <i class="fa-solid fa-blog"></i>
                 <span>Blog</span>
             </a>
-            <a href="/pages/agenda/agenda.html">
-                <i class="fa-solid fa-calendar-days"></i>
-                <span>agenda</span>
-            </a>
             <a href="/pages/sobre/sobre.html">
                 <i class="fa-fw fa-solid fa-circle-info"></i>
-                <span>Sobre o espaço</span>
+                <span>Sobre</span>
             </a>
         </nav>
 
         <main>
             <article>
-                <h2>Bem-vinda ao seu espaço de beleza!</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum totam nam reprehenderit amet
-                    sapiente, accusantium aliquam sunt consectetur. Laboriosam dicta suscipit fugit. Animi dolorum
-                    aspernatur, odit debitis sint incidunt! Cumque!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam fugiat minima magni perferendis
-                    delectus quas ratione obcaecati ad adipisci, error ullam alias praesentium quo maxime quaerat
-                    accusamus! Suscipit, accusantium at.</p>
-                <img src="https://picsum.photos/200/200" alt="Imagem aleatória.">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta totam corporis quod corrupti maxime
-                    sint rem tempore cum! Harum aperiam in ducimus? Officiis quia a illum aut consectetur repellat
-                    facilis!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nulla officia porro vel itaque
-                    delectus modi quaerat corporis, ex in vitae. Fugiat iste nulla expedita illum molestiae non natus a?
-                </p>
-            </article>
+                <h2>Agende o seu serviço</h2>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                    }
 
+                    ul {
+                        list-style-type: none;
+                    }
+
+                    body {
+                        font-family: Verdana, sans-serif;
+                    }
+
+                    .month {
+                        padding: 70px 25px;
+                        width: 100%;
+                        background: rgba(204, 54, 192, 0.286);
+                        text-align: center;
+                    }
+
+                    .month ul {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .month ul li {
+                        color: white;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                    }
+
+                    .month .prev {
+                        float: left;
+                        padding-top: 10px;
+                    }
+
+                    .month .next {
+                        float: right;
+                        padding-top: 10px;
+                    }
+
+                    .weekdays {
+                        margin: 0;
+                        padding: 10px 0;
+                        background-color: rgb(221, 221, 221);
+                    }
+
+                    .weekdays li {
+                        display: inline-block;
+                        width: 13.6%;
+                        color: rgb(102, 102, 102);
+                        text-align: center;
+                    }
+
+                    .days {
+                        padding: 10px 0;
+                        background: rgb(238, 238, 238);
+                        margin: 0;
+                    }
+
+                    .days li {
+                        list-style-type: none;
+                        display: inline-block;
+                        width: 13.6%;
+                        text-align: center;
+                        margin-bottom: 5px;
+                        font-size: 12px;
+                        color: rgb(119, 119, 119);
+                    }
+
+                    .days li .active {
+                        padding: 5px;
+                        background: rgb(26, 188, 156);
+                        color: white !important
+                    }
+
+                    .days li .noactive {
+                        padding: 5px;
+                        background: rgb(188, 45, 26);
+                        color: white !important
+                    }
+
+                    /* Add media queries for smaller screens */
+                    @media screen and (max-width:720px) {
+
+                        .weekdays li,
+                        .days li {
+                            width: 13.1%;
+                        }
+                    }
+
+                    @media screen and (max-width: 420px) {
+
+                        .weekdays li,
+                        .days li {
+                            width: 12.5%;
+                        }
+
+                        .days li .active {
+                            padding: 2px;
+                        }
+                    }
+
+                    @media screen and (max-width: 290px) {
+
+                        .weekdays li,
+                        .days li {
+                            width: 12.2%;
+                        }
+                    }
+                </style>
+                </head>
+
+                <body>
+
+                    <div class="month">
+                        <ul>
+                            <li>
+                                Agosto<br>
+                                <span style="font-size:18px">2021</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="weekdays">
+                        <li>Seg</li>
+                        <li>Ter</li>
+                        <li>Qua</li>
+                        <li>Qui</li>
+                        <li>Sex</li>
+                        <li>Sab</li>
+                        <li>Dom</li>
+                    </ul>
+
+                    <ul class="days">
+                        <li><span class="active">1</span></li>
+                        <li><span class="active">2</span></li>
+                        <li><span class="active">3</span></li>
+                        <li><span class="active">4</span></li>
+                        <li><span class="noactive">5</span></li>
+                        <li><span class="active">6</span></li>
+                        <li><span class="noactive">7</span></li>
+                        <li><span class="active">8</span></li>
+                        <li><span class="noactive">9</span></li>
+                        <li><span class="active">10</span></li>
+                        <li><span class="active">11</span></li>
+                        <li><span class="active">12</span></li>
+                        <li><span class="active">13</span></li>
+                        <li><span class="noactive">14</span></li>
+                        <li><span class="active">15</span></li>
+                        <li><span class="active">16</span></li>
+                        <li><span class="active">17</span></li>
+                        <li><span class="active">18</span></li>
+                        <li><span class="active">19</span></li>
+                        <li><span class="noactive">20</span></li>
+                        <li><span class="noactive">21</span></li>
+                        <li><span class="active">22</span></li>
+                        <li><span class="active">23</span></li>
+                        <li><span class="noactive">24</span></li>
+                        <li><span class="active">25</span></li>
+                        <li><span class="active">26</span></li>
+                        <li><span class="active">27</span></li>
+                        <li><span class="noactive">28</span></li>
+                        <li><span class="active">29</span></li>
+                        <li><span class="active">30</span></li>
+                        <li><span class="active">31</span></li>
+                    </ul>
+                    <h6 style="color: rgb(151, 93, 117);">Dias disponíveis: verde; Dias não disponíveis: vermelho.</h6>
+
+                    <h4>Preencha as informações a seguir:</h3>
+                        <form class="form-one">
+                            Nome e sobrenome:<br>
+                            <input type="text" name="nome"><br>
+
+                            Cell:<br>
+                            <input type="text" name="cell"><br>
+                        </form>
+
+                        <form class="form-two">
+                            Dia:<br>
+                            <select name="dia">
+                                <option value="selecionar">Selecionar</option>
+                                <option value="segunda1">1</option>
+                                <option value="terca1">2</option>
+                                <option value="quarta1">3</option>
+                                <option value="quinta1">4</option>
+                                <option value="sexta1">5</option>
+                                <option value="sabado1">6</option>
+                                <option value="segunda2">8</option>
+                                <option value="terca2">9</option>
+                                <option value="quarta2">10</option>
+                                <option value="quinta2">11</option>
+                                <option value="sexta2">12</option>
+                                <option value="sabado2">13</option>
+                                <option value="segunda3">15</option>
+                                <option value="terca3">16</option>
+                                <option value="quarta3">17</option>
+                                <option value="quinta3">18</option>
+                                <option value="sexta3">19</option>
+                                <option value="sabado3">20</option>
+                                <option value="segunda4">22</option>
+                                <option value="terca4">23</option>
+                                <option value="quarta4">24</option>
+                                <option value="quinta4">25</option>
+                                <option value="sexta4">26</option>
+                                <option value="sabado4">27</option>
+                                <option value="segunda5">29</option>
+                                <option value="terca5">30</option>
+                                <option value="quarta5">31</option>
+                            </select>
+                            <br>
+                            Horário:<br>
+                            <select name="hora">
+                                <option value="selecionar">Selecionar</option>
+                                <option value="oito">08:00</option>
+                                <option value="nove">09:00</option>
+                                <option value="dez">10:00</option>
+                                <option value="onze">11:00</option>
+                                <option value="treze">13:00</option>
+                                <option value="quatorze">14:00</option>
+                                <option value="quinze">15:00</option>
+                                <option value="desesseis">16:00</option>
+                                <option value="desessete">17:00</option>
+                            </select>
+                        </form>
+                        <h4>Selecione apenas o(s) serviço(s) desejado(s):</h3>
+                            <form class="form-three">
+                                Depilação:<br>
+                                <select name="servico">
+                                    <option value="selecionar">Selecionar</option>
+                                    <option value="depilacao1">Abdomên</option>
+                                    <option value="depilacao2">Axila</option>
+                                    <option value="depilacao3">Braço</option>
+                                    <option value="depilacao4">Buço</option>
+                                    <option value="depilacao5">Churreia</option>
+                                    <option value="depilacao6">Costas</option>
+                                    <option value="depilacao7">Cox</option>
+                                    <option value="depilacao8">Face</option>
+                                    <option value="depilacao9">Costeleta</option>
+                                    <option value="depilacao10">Glúteo</option>
+                                    <option value="depilacao11">Lateral anal</option>
+                                    <option value="depilacao12">Mamilo</option>
+                                    <option value="depilacao13">Mento</option>
+                                    <option value="depilacao14">Nariz</option>
+                                    <option value="depilacao15">Orelha</option>
+                                    <option value="depilacao16">Peitoral</option>
+                                    <option value="depilacao17">Perna inteira</option>
+                                    <option value="depilacao18">Meia perna</option>
+                                    <option value="depilacao19">Tricotomia</option>
+                                    <option value="depilacao20">Virilha cavada</option>
+                                    <option value="depilacao21">Virilha simples</option>
+                                </select><br>
+                                Sobrancelha:<br>
+                                <select>
+                                    <option value="selecionar">Selecionar</option>
+                                    <option value="depilacao22">Abdomên</option>
+                                    <option value="depilacao23">Axila</option>
+                                    <option value="depilacao24">Braço</option>
+                                </select><br>
+                                Massagem relaxante:<br>
+                                <select>
+                                    <option value="selecionar">Selecionar</option>
+                                    <option value="massagem1">30min</option>
+                                    <option value="massagem2">1hora</option>
+                                </select><br>
+                                Massagem modeladora:<br>
+                                <select>
+                                    <option value="selecionar">Selecionar</option>
+                                    <option value="massagem3">1 área</option>
+                                    <option value="massagem4">2 áreas</option>
+                                    <option value="massagem5">3 áreas</option>
+                                </select><br>
+                                Drenagem linfática:<br>
+                                <select>
+                                    <option value="selecionar">Selecionar</option>
+                                    <option value="drenagem1">1 área</option>
+                                    <option value="drenagem2">2 áreas</option>
+                                    <option value="drenagem3">3 áreas</option>
+                                </select><br>
+                                Lipo modeladora:<br>
+                                <select>
+                                    <option value="selecionar">Selecionar</option>
+                                    <option value="lipo1">1 área</option>
+                                    <option value="lipo2">2 áreas</option>
+                                    <option value="lipo3">3 áreas</option>
+                                </select><br>
+                            </form>
+            </article>
 
             <aside>
                 <header>
-                    <h3>Barra complementar</h3>
+                    <h3>Posts</h3>
                 </header>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur eum saepe nemo officiis, animi
-                    provident.</p>
+                <ul class="list" type="circle">
+                    <li><a href="">Sobrancelha</a></li>
+                    <li><a href="">Massagem</a></li>
+                    <li><a href="">Depilação</a></li>
+                    <li><a href="">Limpeza de pele</a></li>
+                    <li><a href="">Tabela</a></li>
+                </ul>
             </aside>
         </main>
 

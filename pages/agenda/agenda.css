@@ -31,7 +31,7 @@ a:hover {
 body {
   background-attachment: fixed;
   background-color: rgba(222, 176, 176, 0);
-  background-image: url(./src/picture/background/abstract_pink_03.jpg);
+  background-image: url(./src/picture/background/abstract_pink_14.png);
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,11 +68,9 @@ body {
 #wrap>header img {
   display: block;
   border-radius: 15px;
-  height: 80px;
+  height: 100px;
   margin: 8px 12px 8px 8px;
 }
-
-
 
 /* Título */
 #wrap>header h3 {
@@ -90,14 +88,15 @@ body {
 #wrap>header span {
   display: block;
   padding-top: 15px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: normal;
 }
 
 /* Menu principal */
 #wrap>nav {
-  background-color: rgb(255,228,225);
+  background-color: rgb(255, 228, 225);
   border-radius: 8px;
+  box-shadow: 2px 2px 20px 5px rgb(151, 93, 117);
   margin: 8px;
   display: flex;
   align-items: center;
@@ -105,7 +104,7 @@ body {
 }
 
 #wrap>nav a {
-  padding: 8px 12px;
+  padding: 8px 8px;
   color: rgb(151, 93, 117);
   transition: 2ms;
   display: flex;
@@ -157,9 +156,10 @@ body {
 
 #wrap>main article,
 #wrap>main aside {
-  background-color: rgb(255,228,225);
+  background-color: rgb(255, 228, 225);
   overflow: auto;
   border-radius: 8px;
+  box-shadow: 0px 2px 20px 5px rgb(151, 93, 117);
   margin: 0 8px;
   padding: 0 16px;
 }
@@ -189,6 +189,12 @@ body {
   }
 }
 
+.list {
+  margin: 0;
+  padding: 0 4px 12px 0;
+  list-style: circle inside;
+}
+
 /* Rodapé */
 #wrap>footer {
   background-color: rgba(251, 208, 251, 0);
@@ -211,7 +217,7 @@ body {
 
 #ftop a:hover {
   color: purple;
-  
+
 }
 
 #fbottom {

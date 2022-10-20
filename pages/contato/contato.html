@@ -16,7 +16,7 @@
 
         <header>
             <a href="/index.html" title="Página inicial">
-                <img src="src/logo/logo02.jpg" alt="Logo">
+                <img src="../../src/logo/logo02.jpg" alt="Logo">
             </a>
 
             <h3>
@@ -46,22 +46,39 @@
 
         <main>
             <article>
-                <h2>Bem-vinda ao seu espaço de beleza!</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum totam nam reprehenderit amet
-                    sapiente, accusantium aliquam sunt consectetur. Laboriosam dicta suscipit fugit. Animi dolorum
-                    aspernatur, odit debitis sint incidunt! Cumque!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam fugiat minima magni perferendis
-                    delectus quas ratione obcaecati ad adipisci, error ullam alias praesentium quo maxime quaerat
-                    accusamus! Suscipit, accusantium at.</p>
-                <img src="https://picsum.photos/200/200" alt="Imagem aleatória.">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta totam corporis quod corrupti maxime
-                    sint rem tempore cum! Harum aperiam in ducimus? Officiis quia a illum aut consectetur repellat
-                    facilis!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nulla officia porro vel itaque
-                    delectus modi quaerat corporis, ex in vitae. Fugiat iste nulla expedita illum molestiae non natus a?
-                </p>
-            </article>
+                <h2>Faça contato</h2>
+                <p>Preencha os campos do formulário abaixo.</p>
 
+                <form action="" method="post" id="contact">
+
+                    <p>
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Nome e Sobrenome" required minlength="3">
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+                    </p>
+
+                    <p>
+                        <label for="subject">Assunto:</label>
+                        <input type="text" name="subject" id="subject" placeholder="Assunto do contato" required
+                            minlength="5">
+                    </p>
+
+                    <p>
+                        <label for="message">Mensagem:</label>
+                        <textarea name="message" id="message" placeholder="Escreva o que quiser" required
+                            minlength="5"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar</button>
+                    </p>
+
+                </form>&nbsp;
+            </article>
 
             <aside>
                 <header>
