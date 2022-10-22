@@ -98,7 +98,7 @@ body {
 #wrap>nav {
   background-color: rgb(255,228,225);
   border-radius: 8px;
-  box-shadow: 2px 2px 20px 5px rgb(151, 93, 117);
+  box-shadow: 2px 2px 20px 5px rgb(182,137,156);
   margin: 8px;
   display: flex;
   align-items: center;
@@ -107,7 +107,7 @@ body {
 
 #wrap>nav a {
   padding: 8px 8px;
-  color: rgb(151, 93, 117);
+  color: rgb(207, 142, 169);
   transition: 2ms;
   display: flex;
   flex-direction: column;
@@ -161,7 +161,7 @@ body {
   background-color: rgb(255,228,225);
   overflow: auto;
   border-radius: 8px;
-  box-shadow: 0px 2px 20px 5px rgb(151, 93, 117);
+  box-shadow: 0px 2px 20px 5px rgb(207, 142, 169);
   margin: 0 8px;
   padding: 0 16px;
 }
@@ -208,7 +208,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 3px dotted rgb(177, 133, 140);
+  border-bottom: 3px dotted rgb(151, 93, 117);
 }
 
 #ftop a {
