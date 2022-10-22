@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="calendario.css">
     <title>Espaço JB</title>
 </head>
 
@@ -43,124 +44,6 @@
         <main>
             <article>
                 <h3>Agende o seu serviço</h3>
-                <style>
-                    * {
-                        box-sizing: border-box;
-                        border-radius: 10px;
-                    }
-
-                    ul {
-                        list-style-type: none;
-                    }
-
-                    body {
-                        font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-                    }
-
-                    .month {
-                        padding: 50px 25px;
-                        width: 100%;
-                        background: rgba(204, 54, 192, 0.286);
-                        text-align: center;
-                    }
-
-                    .month ul {
-                        margin: 0;
-                        padding: 0;
-                    }
-
-                    .month ul li {
-                        color: white;
-                        font-size: 20px;
-                        text-transform: uppercase;
-                        letter-spacing: 3px;
-                    }
-
-                    .month .prev {
-                        float: left;
-                        padding-top: 10px;
-                    }
-
-                    .month .next {
-                        float: right;
-                        padding-top: 10px;
-                    }
-
-                    .weekdays {
-                        margin: 0;
-                        padding: 10px 0;
-                        background-color: rgb(221, 221, 221);
-                    }
-
-                    .weekdays li {
-                        display: inline-block;
-                        width: 13.6%;
-                        color: rgb(102, 102, 102);
-                        text-align: center;
-                    }
-
-                    .days {
-                        padding: 10px 0;
-                        background: rgb(238, 238, 238);
-                        margin: 0;
-                    }
-
-                    .days li {
-                        list-style-type: none;
-                        display: inline-block;
-                        width: 13.6%;
-                        text-align: center;
-                        margin-bottom: 5px;
-                        font-size: 12px;
-                        color: rgb(119, 119, 119);
-                    }
-
-                    .days li .active {
-                        padding: 5px;
-                        background: rgb(148, 151, 106);
-                        color: white !important
-                    }
-
-                    .days li .noactive {
-                        padding: 5px;
-                        background: rgb(117, 71, 56);
-                        color: white !important
-                    }
-
-                    .form {
-                        padding: 20px;
-                    }
-
-                    /* Add media queries for smaller screens */
-                    @media screen and (max-width:720px) {
-
-                        .weekdays li,
-                        .days li {
-                            width: 13.1%;
-                        }
-                    }
-
-                    @media screen and (max-width: 420px) {
-
-                        .weekdays li,
-                        .days li {
-                            width: 12.5%;
-                        }
-
-                        .days li .active {
-                            padding: 2px;
-                        }
-                    }
-
-                    @media screen and (max-width: 290px) {
-
-                        .weekdays li,
-                        .days li {
-                            width: 12.2%;
-                        }
-                    }
-                </style>
-                </head>
 
                 <body>
 
@@ -305,12 +188,64 @@
                 <header>
                     <h3>Posts</h3>
                 </header>
-                <ul class="list" type="circle">
-                    <li><a href="">Sobrancelha</a></li>
-                    <li><a href="">Massagem</a></li>
-                    <li><a href="">Depilação</a></li>
-                    <li><a href="">Limpeza de pele</a></li>
-                </ul>
+                <div class="posts">
+                    <ul class="list" id="list-posts" type="circle">
+                        <li class="list selecionado">
+                            <a href="../blog/sobrancelha.html">Sobrancelha</a>
+                            <img class="img-posts" src="../../src/assent/navigate_next.svg" alt="abrir toggle">
+                            <ul class="sub-posts">
+                                <li>Design</li>
+                                <li>Design + Henna</li>
+                                <li>Brow Lamination</li>
+                            </ul>
+                        </li>
+                        <li class="list selecionado">
+                            <a href="../pages/blog/massagem.html">Massagem</a>
+                            <img class="img-posts" src="../../src/assent/navigate_next.svg" alt="abrir toggle">
+                            <ul class="sub-posts">
+                                <li>                                    
+                                    Massagem relaxante
+                                </li>
+                                <li>
+                                    Massagem modeladora
+                                </li>
+                                <li>
+                                    Drenagem linfática
+                                </li>
+                                <li>
+                                    Lipo modeladora
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list selecionado">
+                            <a href="../pages/blog/depilacao.html">Depilação</a>
+                            <img class="img-posts" src="../../src/assent/navigate_next.svg" alt="abrir toggle">
+                            <ul class="sub-posts">
+                                <li>
+
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list selecionado">
+                            <a href="../pages/blog/limpezadepele.html">Limpeza de pele</a>
+                        </li>
+                    </ul>
+                </div>
             </aside>
         </main>
 

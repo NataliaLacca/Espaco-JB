@@ -191,6 +191,11 @@ body {
   }
 }
 
+form {
+  display: flex;
+  padding: 20px;
+}
+
 /* Rodapé */
 #wrap>footer {
   background-color: rgba(251, 208, 251, 0);
