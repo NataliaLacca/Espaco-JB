@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Espaço JB</title>
 </head>
@@ -16,9 +16,8 @@
 
         <header>
             <a href="/index.html" title="Página inicial">
-                <img src="src/logo/logo02.jpg" alt="Logo">
+                <img src="../../src/logo/logo02.jpg" alt="Logo">
             </a>
-
             <h3>
                 Espaço Jessica Bengaly
                 <span>Beleza para Mulheres</span>
@@ -38,6 +37,10 @@
                 <i class="fa-solid fa-calendar-days"></i>
                 <span>Agenda</span>
             </a>
+            <a href="/pages/contato/contato.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Contato</span>
+            </a>
             <a href="/pages/sobre/sobre.html">
                 <i class="fa-fw fa-solid fa-circle-info"></i>
                 <span>Sobre</span>
@@ -46,69 +49,100 @@
 
         <main>
             <article>
-                <h3>Bem-vinda ao seu espaço de beleza!</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum totam nam reprehenderit amet
-                    sapiente, accusantium aliquam sunt consectetur. Laboriosam dicta suscipit fugit. Animi dolorum
-                    aspernatur, odit debitis sint incidunt! Cumque!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam fugiat minima magni perferendis
-                    delectus quas ratione obcaecati ad adipisci, error ullam alias praesentium quo maxime quaerat
-                    accusamus! Suscipit, accusantium at.</p>
-                <img src="https://picsum.photos/200/200" alt="Imagem aleatória.">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta totam corporis quod corrupti maxime
-                    sint rem tempore cum! Harum aperiam in ducimus? Officiis quia a illum aut consectetur repellat
-                    facilis!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nulla officia porro vel itaque
-                    delectus modi quaerat corporis, ex in vitae. Fugiat iste nulla expedita illum molestiae non natus a?
-                </p>
+                <h3>Sobrancelha</h3>
+                <section id="posts" class="content-area">
+                    <article class="content">
+                        <img src="https://picsum.photos/200/200" class="image" alt="Imagem aleatória.">
+                        <header class="posts-header">
+                            <h4>
+                                <a href="sobrancelha.html">Design</a>
+                            </h4>
+                            <div class="posts-content">
+                                <p>Conteúdos a cerca de sobrancelha. Conteúdos a cerca de sobrancelha.
+                                    Conteúdos a cerca de sobrancelha. Conteúdos a cerca de sobrancelha.
+                                    Conteúdos a cerca de sobrancelha. Conteúdos a cerca de sobrancelha.
+                                    Conteúdos a cerca de sobrancelha. Conteúdos a cerca de sobrancelha.
+                                    Conteúdos a cerca de sobrancelha. Conteúdos a cerca de sobrancelha.</p>
+                                <a href="sobrancelha.html" class="more-link">Leia mais</a>
+                            </div>
+                        </header>
+                    </article>
+                    <article class="content">
+                        <img src="https://picsum.photos/200/200" class="image" alt="Imagem aleatória.">
+                        <header class="posts-header">
+                            <h4 class="posts-tittle">
+                                <a href="sobrancelha.html">Design + Henna</a>
+                            </h4>
+                            <div class="posts-content">
+                                <p>Conteúdos a cerca de massagem.</p>
+                                <a href="sobrancelha.html" class="more-link">Leia mais</a>
+                            </div>
+                        </header>
+                    </article>
+                    <article class="content">
+                        <img src="https://picsum.photos/200/200" class="image" alt="Imagem aleatória.">
+                        <header class="posts-header">
+                            <h4 class="posts-tittle">
+                                <a href="sobrancelha.html">Brow Lamination</a>
+                            </h4>
+                            <div class="posts-content">
+                                <p>Conteúdos a cerca de depilação.</p>
+                                <a href="sobrancelha.html" class="more-link">Leia mais</a>
+                            </div>
+                        </header>
+                    </article>                    
+                </section>
             </article>
 
             <aside>
                 <header>
-                    <h3>Posts</h3>
+                    <h4>Postagens</h4>
                 </header>
-                <div class="posts">
-                    <ul class="list" id="list-posts" type="circle">
-                        <li class="list selecionado">
-                            <a href="pages/blog/sobrancelha.html">Sobrancelha</a>
-                            <img class="img-posts" src="src/assent/navigate_next.svg" alt="abrir toggle">
-                            <ul class="sub-posts">
-                                <li>Design</li>
-                                <li>Design + Henna</li>
-                                <li>Brow Lamination</li>
-                            </ul>
-                        </li>
-                        <li class="list selecionado">
-                            <a href="pages/blog/massagem.html">Massagem</a>
-                            <img class="img-posts" src="src/assent/navigate_next.svg" alt="abrir toggle">
-                            <ul>
-                                <li>Massagem relaxante</li>
-                                <li>Massagem modeladora</li>
-                                <li>Drenagem linfática</li>
-                                <li>Lipo modeladora</li>
-                                <li></li>
-                            </ul>
-                        </li>
-                        <li class="list selecionado">
-                            <a href="pages/blog/depilacao.html">Depilação</a>
-                            <img class="img-posts" src="src/assent/navigate_next.svg" alt="abrir toggle">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </li>
-                        <li class="list selecionado">
-                            <a href="pages/blog/limpezadepele.html">Limpeza de pele</a>
-                        </li>
-                    </ul>
-                </div>
+                <details>
+                    <summary>Sobrancelha</summary>
+                    <li><a href="pages/blog/sobrancelha.html">Design</a></li>
+                    <li><a href="pages/blog/sobrancelha.html">Design + Henna</a></li>
+                    <li><a href="pages/blog/sobrancelha.html">Brow Lamination</a></li>
+                </details>
+                <br>
+                <details>
+                    <summary>Massagem</summary>
+                    <li><a href="pages/blog/massagem.html">Relaxante</a></li>
+                    <li><a href="pages/blog/massagem.html">Modeladora</a></li>
+                    <li><a href="pages/blog/massagem.html">Drenagem linfática</a></li>
+                    <li><a href="pages/blog/massagem.html">Lipo modeladora</a></li>
+                </details>
+                <br>
+                <details>
+                    <summary>Depilação</summary>
+                    <li><a href="pages/blog/depilacao.html">Vantagens</a></li>
+                    <li><a href="pages/blog/depilacao.html">Pós-depilação</a></li>
+                    <li><a href="pages/blog/depilacao.html">Cuidados</a></li>
+                </details>
+                <br>
+                <details>
+                    <summary>Limpeza de pele</summary>
+                    <li><a href="pages/blog/limpezadepele.html">Como funciona?</a></li>
+                    <li><a href="pages/blog/limpezadepele.html">Cuidados</a></li>
+                </details>
+                <br>
+                <details>
+                    <summary>Outros assuntos</summary>
+                    <li><a href="pages/blog/outros.html">Acne</a></li>
+                    <li><a href="pages/blog/outros.html">Cosméticos</a></li>
+                    <li><a href="pages/blog/outros.html">Biossegurança</a></li>
+                </details>
+                <nav>
+                    <h4>Redes sociais:</h4>
+                    <a href="https://www.instagram.com/jessicabengaly/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a><br>
+                    <a href="/" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Whatsapp</span>
+                    </a>
+                </nav>
             </aside>
         </main>
 
@@ -124,37 +158,9 @@
                     <i class="fa-fw fa-solid fa-circle-up"></i>
                 </a>
             </div>
-
-            <div id="fbottom">
-                <nav>
-                    <h4>Redes sociais:</h4>
-                    <a href="https://www.instagram.com/jessicabengaly/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="/" target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span>Whatsapp</span>
-                    </a>
-                </nav>
-
-                <nav>
-                    <h4>Links rápidos:</h4>
-                    <a href="/pages/sobre/sobre.html">
-                        <i class="fa-fw fa-solid fa-circle-info"></i>
-                        <span>Sobre o espaço</span>
-                    </a>
-                    <a href="/pages/privacidade/privacidade.html">
-                        <i class="fa-solid fa-user-lock fa-fw"></i>
-                        <span>Privacidade</span>
-                    </a>
-                </nav>
-
-            </div>
         </footer>
         <span>&nbsp;</span>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/script.js"></script>
 </body>
