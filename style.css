@@ -189,11 +189,24 @@ body {
   }
 }
 
+summary {
+  cursor: pointer;
+}
+
+summary:hover {
+  color: purple;
+}
+
+li {
+  padding-left: 15px;
+}
+
 /* Rodapé */
 #wrap>footer {
   background-color: rgba(251, 208, 251, 0);
   border-radius: 8px;
   margin: 8px;
+  padding-top: 10px;
 }
 
 #ftop {

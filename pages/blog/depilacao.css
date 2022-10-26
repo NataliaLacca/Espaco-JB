@@ -31,7 +31,7 @@ a:hover {
 body {
   background-attachment: fixed;
   background-color: rgba(222, 176, 176, 0);
-  background-image: url(./src/picture/background/abstract_pink_14.png);
+  background-image: url(../../src/picture/background/abstract_pink_14.png);
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,8 +72,6 @@ body {
   margin: 8px 12px 8px 8px;
 }
 
-
-
 /* Título */
 #wrap>header h3 {
   display: flex;
@@ -98,7 +96,7 @@ body {
 #wrap>nav {
   background-color: rgb(255,228,225);
   border-radius: 8px;
-  box-shadow: 2px 2px 20px 5px rgb(182,137,156);
+  box-shadow: 2px 2px 20px 5px rgba(182, 137, 156, 0.781);
   margin: 8px;
   display: flex;
   align-items: center;
@@ -161,9 +159,9 @@ body {
   background-color: rgb(255,228,225);
   overflow: auto;
   border-radius: 8px;
-  box-shadow: 0px 2px 20px 5px rgb(207, 142, 169);
+  box-shadow: 0px 2px 20px 5px rgba(207, 142, 169, 0.459);
   margin: 0 8px;
-  padding: 0 16px;
+  padding: 0 16px 20px;
 }
 
 #wrap>main article {
@@ -191,10 +189,29 @@ body {
   }
 }
 
-.list {
-  margin: 0;
-  padding: 0 4px 12px 0;
-  list-style: circle inside;
+summary {
+  cursor: pointer;
+}
+
+summary:hover {
+  color: purple;
+}
+
+li {
+  padding-left: 15px;
+}
+
+#posts {
+  padding: 5px;
+}
+
+.content {
+  display: flex;
+  gap: 10px;
+}
+
+.image {
+  padding-top: 20px;
 }
 
 /* Rodapé */
@@ -202,13 +219,14 @@ body {
   background-color: rgba(251, 208, 251, 0);
   border-radius: 8px;
   margin: 8px;
+  padding-top: 10px;
 }
 
 #ftop {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 3px dotted rgb(151, 93, 117);
+  /**border-bottom: 3px dotted rgb(151, 93, 117);**/
 }
 
 #ftop a {

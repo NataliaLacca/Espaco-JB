@@ -96,7 +96,7 @@ body {
 #wrap>nav {
   background-color: rgb(255,228,225);
   border-radius: 8px;
-  box-shadow: 2px 2px 20px 5px rgb(182,137,156);
+  box-shadow: 2px 2px 20px 5px rgba(182, 137, 156, 0.781);
   margin: 8px;
   display: flex;
   align-items: center;
@@ -159,7 +159,7 @@ body {
   background-color: rgb(255,228,225);
   overflow: auto;
   border-radius: 8px;
-  box-shadow: 0px 2px 20px 5px rgb(207, 142, 169);
+  box-shadow: 0px 2px 20px 5px rgba(207, 142, 169, 0.459);
   margin: 0 8px;
   padding: 0 16px 20px;
 }
@@ -189,6 +189,18 @@ body {
   }
 }
 
+summary {
+  cursor: pointer;
+}
+
+summary:hover {
+  color: purple;
+}
+
+li {
+  padding-left: 15px;
+}
+
 #posts {
   padding: 5px;
 }
@@ -202,13 +214,12 @@ body {
   padding-top: 20px;
 }
 
-
-
 /* Rodapé */
 #wrap>footer {
   background-color: rgba(251, 208, 251, 0);
   border-radius: 8px;
   margin: 8px;
+  padding-top: 10px;
 }
 
 #ftop {
