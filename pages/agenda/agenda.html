@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="agenda.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="calendario.css">
     <title>Espaço JB</title>
@@ -35,13 +35,9 @@
                 <i class="fa-solid fa-blog"></i>
                 <span>Blog</span>
             </a>
-            <a href="/pages/contato/contato.html">
+            <a href="/pages/login/login.html">
                 <i class="fa-solid fa-user"></i>
-                <span>Contato</span>
-            </a>
-            <a href="/pages/sobre/sobre.html">
-                <i class="fa-fw fa-solid fa-circle-info"></i>
-                <span>Sobre</span>
+                <span>Login</span>
             </a>
         </nav>
 
@@ -108,12 +104,14 @@
 
                     <form class="form">
                         <h4>Preencha as informações a seguir:</h4>
-                        Nome e sobrenome:
-                        <input type="text" name="nome">
-                        Cell:
-                        <input type="text" name="cell">
-                        <br>
-                        <br>
+                        <div class="field">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome e sobrenome*" required>
+                        </div>
+                        <div class="field">
+                            <label for="telefone">Telefone:</label>
+                            <input type="text" id="telefone" name="telefone" placeholder="Digite seu número*" required>
+                        </div>
                         Dia:
                         <input type="date">
                         Horário:
@@ -149,9 +147,9 @@
                         Sobrancelha:<br>
                         <select>
                             <option value="selecionar">Selecionar</option>
-                            <option value="depilacao22">Abdomên</option>
-                            <option value="depilacao23">Axila</option>
-                            <option value="depilacao24">Braço</option>
+                            <option value="depilacao22">Design</option>
+                            <option value="depilacao23">Design + Henna</option>
+                            <option value="depilacao24">Brow Lamination</option>
                         </select><br>
                         <br>
                         Massagem relaxante:<br>
@@ -185,7 +183,8 @@
                             <option value="lipo3">3 áreas</option>
                         </select><br>
                         <br>
-                        <input type="submit">
+                        <input type="submit" name="acao" value="Enviar">
+                        <span>&nbsp;</span>
                     </form>
             </article>
 
@@ -238,6 +237,18 @@
                         <span>Whatsapp</span>
                     </a>
                 </nav>
+                <nav>
+                    <h4>Informações:</h4>
+                    <a href="/pages/contato/contato.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Contato</span>
+                    </a><br>
+                    <br>
+                    <a href="/pages/sobre/sobre.html">
+                        <i class="fa-fw fa-solid fa-circle-info"></i>
+                        <span>Sobre</span>
+                    </a>
+                </nav>
             </aside>
         </main>
 
@@ -253,37 +264,9 @@
                     <i class="fa-fw fa-solid fa-circle-up"></i>
                 </a>
             </div>
-
-            <div id="fbottom">
-                <nav>
-                    <h4>Redes sociais:</h4>
-                    <a href="https://www.instagram.com/jessicabengaly/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="/" target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span>Whatsapp</span>
-                    </a>
-                </nav>
-
-                <nav>
-                    <h4>Links rápidos:</h4>
-                    <a href="/pages/sobre/sobre.html">
-                        <i class="fa-fw fa-solid fa-circle-info"></i>
-                        <span>Sobre o espaço</span>
-                    </a>
-                    <a href="/pages/privacidade/privacidade.html">
-                        <i class="fa-solid fa-user-lock fa-fw"></i>
-                        <span>Privacidade</span>
-                    </a>
-                </nav>
-
-            </div>
         </footer>
         <span>&nbsp;</span>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/script.js"></script>
 </body>

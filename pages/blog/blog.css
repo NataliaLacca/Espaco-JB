@@ -24,7 +24,7 @@ a {
 /* Quando o mouse passar sobre */
 a:hover {
   color: purple;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Fundo do site */
@@ -105,7 +105,7 @@ body {
 
 #wrap>nav a {
   padding: 8px 8px;
-  color: rgb(207, 142, 169);
+  color: rgb(204, 109, 147);
   transition: 2ms;
   display: flex;
   flex-direction: column;

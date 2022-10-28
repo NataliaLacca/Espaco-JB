@@ -24,7 +24,7 @@ a {
 /* Quando o mouse passar sobre */
 a:hover {
   color: purple;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Fundo do site */
@@ -172,23 +172,6 @@ body {
   margin-top: 8px;
 }
 
-@media (min-width: 768px) {
-  #wrap>main {
-    flex-direction: row;
-  }
-
-  #wrap>main article {
-    flex-grow: 1;
-  }
-
-  #wrap>main aside {
-    margin: 0;
-    margin-right: 8px;
-    min-width: 220px;
-    max-width: 220px;
-  }
-}
-
 /* Formulário */
 .formulario {
   max-width: 500px;
@@ -247,6 +230,23 @@ input[type=submit] {
   margin: 0 auto;
   text-align: center;
   border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  #wrap>main {
+    flex-direction: row;
+  }
+
+  #wrap>main article {
+    flex-grow: 1;
+  }
+
+  #wrap>main aside {
+    margin: 0;
+    margin-right: 8px;
+    min-width: 220px;
+    max-width: 220px;
+  }
 }
 
 /* Rodapé */

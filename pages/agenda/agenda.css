@@ -24,14 +24,14 @@ a {
 /* Quando o mouse passar sobre */
 a:hover {
   color: purple;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Fundo do site */
 body {
   background-attachment: fixed;
   background-color: rgba(222, 176, 176, 0);
-  background-image: url(./src/picture/background/abstract_pink_14.png);
+  background-image: url(../../src/picture/background/abstract_pink_14.png);
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -105,7 +105,7 @@ body {
 
 #wrap>nav a {
   padding: 8px 8px;
-  color: rgb(207, 142, 169);
+  color: rgb(204, 109, 147);
   transition: 2ms;
   display: flex;
   flex-direction: column;
@@ -172,6 +172,77 @@ body {
   margin-top: 8px;
 }
 
+summary {
+  cursor: pointer;
+}
+
+summary:hover {
+  color: purple;
+}
+
+li {
+  padding-left: 15px;
+}
+
+/* Formulário */
+.formulario {
+  max-width: 500px;
+  padding: 10px;
+}
+
+.field {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.field label,
+.field span {
+  padding-left: 10px;
+  font-size: 1.1em;
+  display: block;
+  width: 100%;
+}
+
+.range label {
+  width: auto;
+  display: inline-block;
+}
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(116, 92, 71, 0.534);
+  outline: none;
+}
+
+input#nao {
+  margin-left: 30px;
+}
+
+textarea {
+  line-height: 20px;
+  padding: 10px;
+  height: 90px;
+  resize: none;
+}
+
+input[type=submit] {
+  display: block;
+  background-color: rgba(116, 92, 71, 0.322);
+  height: 35px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+}
+
 @media (min-width: 768px) {
   #wrap>main {
     flex-direction: row;
@@ -187,23 +258,6 @@ body {
     min-width: 220px;
     max-width: 220px;
   }
-}
-
-summary {
-  cursor: pointer;
-}
-
-summary:hover {
-  color: purple;
-}
-
-li {
-  padding-left: 15px;
-}
-
-form {
-  display: flex;
-  padding: 20px;
 }
 
 /* Rodapé */
