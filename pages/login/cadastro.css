@@ -263,16 +263,25 @@ input[type=submit] {
     /**border-bottom: 3px dotted rgb(151, 93, 117);**/
 }
 
-#ftop a {
+#ftop i {
     font-size: 24px;
-    padding: 4px;
     color: rgb(151, 93, 117);
-}
-
-#ftop a:hover {
+  }
+  
+  #ftop i:hover {
     color: purple;
-
-}
+  }
+  
+  #ftop a {
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: rgb(151, 93, 117);
+  }
+  
+  #ftop a:hover {
+    color: purple;
+  }
 
 #fbottom {
     display: flex;

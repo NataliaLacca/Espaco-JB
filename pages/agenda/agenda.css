@@ -94,9 +94,9 @@ body {
 
 /* Menu principal */
 #wrap>nav {
-  background-color: rgb(255, 228, 225);
+  background-color: rgb(255,228,225);
   border-radius: 8px;
-  box-shadow: 2px 2px 20px 5px rgb(182, 137, 156);
+  box-shadow: 2px 2px 20px 5px rgb(182,137,156);
   margin: 8px;
   display: flex;
   align-items: center;
@@ -156,12 +156,12 @@ body {
 
 #wrap>main article,
 #wrap>main aside {
-  background-color: rgb(255, 228, 225);
+  background-color: rgb(255,228,225);
   overflow: auto;
   border-radius: 8px;
   box-shadow: 0px 2px 20px 5px rgb(207, 142, 169);
   margin: 0 8px;
-  padding: 0 16px;
+  padding: 0 16px 20px;
 }
 
 #wrap>main article {
@@ -182,65 +182,6 @@ summary:hover {
 
 li {
   padding-left: 15px;
-}
-
-/* Formulário */
-.formulario {
-  max-width: 500px;
-  padding: 10px;
-}
-
-.field {
-  width: 100%;
-  margin: 15px 0;
-}
-
-.field label,
-.field span {
-  padding-left: 10px;
-  font-size: 1.1em;
-  display: block;
-  width: 100%;
-}
-
-.range label {
-  width: auto;
-  display: inline-block;
-}
-
-input[type=text],
-input[type=email] {
-  width: 100%;
-  padding-left: 10px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 15px;
-  border: 1px solid rgba(116, 92, 71, 0.534);
-  outline: none;
-}
-
-input#nao {
-  margin-left: 30px;
-}
-
-textarea {
-  line-height: 20px;
-  padding: 10px;
-  height: 90px;
-  resize: none;
-}
-
-input[type=submit] {
-  display: block;
-  background-color: rgba(116, 92, 71, 0.322);
-  height: 35px;
-  border: none;
-  outline: 0;
-  cursor: pointer;
-  width: 100px;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 15px;
 }
 
 @media (min-width: 768px) {
@@ -265,24 +206,33 @@ input[type=submit] {
   background-color: rgba(251, 208, 251, 0);
   border-radius: 8px;
   margin: 8px;
+  padding-top: 10px;
 }
 
 #ftop {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 3px dotted rgb(151, 93, 117);
+}
+
+#ftop i {
+  font-size: 24px;
+  color: rgb(151, 93, 117);
+}
+
+#ftop i:hover {
+  color: purple;
 }
 
 #ftop a {
-  font-size: 24px;
-  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
   color: rgb(151, 93, 117);
 }
 
 #ftop a:hover {
-  color: purple;
-
+  color: purple;  
 }
 
 #fbottom {
