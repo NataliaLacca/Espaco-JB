@@ -136,13 +136,16 @@
 
         <footer>
             <div id="ftop">
-                <a href="/" title="Página inicial">
+                <a class="home" href="/" title="Página inicial">
                     <i class="fa-fw fa-solid fa-house-chimney"></i>
                 </a>
 
-                <div>&copy; 2022 Espaço JB</div>
+                <div class="policies">
+                    &copy; 2022 Espaço JB
+                    <a href="pages/privacidade/privacidade.html">Políticas de Privacidade</a>
+                </div>
 
-                <a href="#top">
+                <a class="arrow" href="#top">
                     <i class="fa-fw fa-solid fa-circle-up"></i>
                 </a>
             </div>

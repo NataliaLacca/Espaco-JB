@@ -1,12 +1,27 @@
+<?php
+
+// Processa o título da página → Tag <title>...</title>:
+if ($page_title == '')                    // Se o título da página não foi definido
+    $tag_title .= " - " . $site_slogan;   // O título recebe o slogan
+else                                      // Se definiu um título
+    $tag_title .= " - " . $page_title;    // O título recebe o título definido
+
+// Processa mensagem de 'Copyright' → Tag <footer>...</footer>:
+$ytoday = intval(date('Y'));                // Obtém o ano atual
+if ($ytoday > $site_year)                   // Se o ano atual é maior do que o ano do site
+    $copyright .= "{$ytoday} {$site_name}"; // Mostra o ano do site e o ano atual na mensagem
+else                                        // Se o ano atual é o ano do site
+    $copyright .= $site_name;               // Mostra somente o ano do site na mensagem:
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Espaço JB</title>
+    <link rel="stylesheet" href="style.css">
+    <title><?php echo $tag_title ?></title>
 </head>
 
 <body>
@@ -15,7 +30,7 @@
 
         <header>
             <a href="/index.html" title="Página inicial">
-                <img src="../../src/logo/logo02.jpg" alt="Logo">
+                <img src="src/logo/logo02.jpg" alt="Logo">
             </a>
             <h3>
                 Espaço Jessica Bengaly
@@ -44,35 +59,20 @@
 
         <main>
             <article>
-                <h3>Bem-vinda ao seu espaço de beleza!</h3>
-                <p>Preencha os campos abaixo:</p>
-                <form action="enviar-email.php" class="formulario" method="post">
-                    <div class="field">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome e sobrenome*" required>
-                    </div>
-                    <div class="field">
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu número*" required>
-                    </div>
-                    <div class="field">
-                        <label for="date">Data de nascimento:</label>
-                        <input type="date" name="nascimento">
-                    </div>
-                    <div class="field">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail*" required>
-                    </div>
-                    <div class="field">
-                        <label for="password">Senha:</label>
-                        <input type="password" id="password" name="password" placeholder="Crie uma senha*" required>
-                    </div>
-                    <div class="field">
-                        <label for="file">Anexar foto:</label>
-                        <input type="file" id="file" name="file">
-                    </div>
-                    <input type="submit" name="acao" value="Efetuar cadastro">
-                </form>
+                <h3>Bem-vinda ao seu Espaço de Beleza!</h3>
+                <p>Já cuidou da sua saúde hoje? A estética vai muito além da aparência.
+                    É muito mais que um dom ou talento. É o poder de transformar
+                    a vida de alguém! Pensar e cuidar de si mesma não é egoísmo, mas sim
+                    um ato de amor próprio.</p>
+                <p>Cuidar de si mesma sempre vai ser o melhor tratamento. Saúde, beleza
+                    e bem-estar andam de mãos dadas. Seja o seu próprio padrão de beleza
+                    e seja gentil ao se olhar no espelho. Se ame em primeiro lugar!
+                    A vida é muito curta para não ir à esteticista.</p>
+                <img src="https://picsum.photos/200/200" alt="Imagem aleatória.">
+                <p>Não deixe para depois os cuidados que precisa ter com você mesma.
+                    O custo do cuidado é sempre menor do que o custo do reparo, pense
+                    nisso. E não se compare! Toda beleza é única e rara.</p>
+                <p>Vem para o <i>Espaço JB</i>!</p>
             </article>
 
             <aside>
@@ -141,13 +141,16 @@
 
         <footer>
             <div id="ftop">
-                <a href="/" title="Página inicial">
+                <a class="home" href="/" title="Página inicial">
                     <i class="fa-fw fa-solid fa-house-chimney"></i>
                 </a>
 
-                <div>&copy; 2022 Espaço JB</div>
+                <div class="policies">
+                    &copy; 2022 Espaço JB
+                    <a href="pages/privacidade/privacidade.html">Políticas de Privacidade</a>
+                </div>
 
-                <a href="#top">
+                <a class="arrow" href="#top">
                     <i class="fa-fw fa-solid fa-circle-up"></i>
                 </a>
             </div>

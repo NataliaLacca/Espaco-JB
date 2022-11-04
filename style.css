@@ -204,8 +204,8 @@ li {
 /* Rodapé */
 #wrap>footer {
   background-color: rgba(251, 208, 251, 0);
-  border-radius: 8px;
-  margin: 8px;
+  /**border-radius: 8px;
+  margin: 8px;**/
   padding-top: 10px;
 }
 
@@ -213,18 +213,36 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 15px 0 15px;
   /**border-bottom: 3px dotted rgb(151, 93, 117);**/
 }
 
-#ftop a {
+.policies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home i {
   font-size: 24px;
-  padding: 4px;
+  padding-bottom: 4px;
   color: rgb(151, 93, 117);
 }
 
-#ftop a:hover {
+.home i:hover {
   color: purple;
   
+}
+
+.arrow i {
+  font-size: 24px;
+  padding-bottom: 4px;
+  color: rgb(151, 93, 117);
+}
+
+.arrow i:hover {
+  color: purple;  
 }
 
 #fbottom {
