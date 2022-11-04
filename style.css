@@ -213,7 +213,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 3px dotted rgb(151, 93, 117);
+  /**border-bottom: 3px dotted rgb(151, 93, 117);**/
 }
 
 #ftop a {
