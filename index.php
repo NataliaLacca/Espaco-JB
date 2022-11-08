@@ -1,3 +1,6 @@
+<?php
+require('includes/config.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,9 +17,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Espaço JB</title>
+    <title><?php echo $c['sitename']?></title>
 </head>
 
 <body>
@@ -25,11 +28,11 @@
 
         <header>
             <a href="/index.html" title="Página inicial">
-                <img src="src/logo/logo02.jpg" alt="Logo">
+                <img src="<?php echo $c['sitelogo']?>" alt="Logo">
             </a>
             <h3>
-                Espaço Jessica Bengaly
-                <span>Beleza para Mulheres</span>
+                <?php echo $c['favname']?>
+                <span><?php echo $c['siteslogan']?></span>
             </h3>
         </header>
 
@@ -38,15 +41,15 @@
                 <i class="fa-fw fa-solid fa-house-chimney"></i>
                 <span>Início</span>
             </a>
-            <a href="/pages/blog/blog.html">
+            <a href="/pages/blog/blog.php">
                 <i class="fa-solid fa-blog"></i>
                 <span>Blog</span>
             </a>
-            <a href="/pages/agenda/agenda.html">
+            <a href="/pages/schedule/schedule.php">
                 <i class="fa-solid fa-calendar-days"></i>
                 <span>Agenda</span>
             </a>
-            <a href="/pages/login/login.html">
+            <a href="/pages/login/login.php">
                 <i class="fa-solid fa-user"></i>
                 <span>Login</span>
             </a>
@@ -67,7 +70,7 @@
                 <p>Não deixe para depois os cuidados que precisa ter com você mesma.
                     O custo do cuidado é sempre menor do que o custo do reparo, pense
                     nisso. E não se compare! Toda beleza é única e rara.</p>
-                <p>Vem para o <i>Espaço JB</i>!</p>
+                <p>Vem para o <i><?php echo $c['sitename']?></i>!</p>
             </article>
 
             <aside>
@@ -76,37 +79,37 @@
                 </header>
                 <details>
                     <summary>Sobrancelha</summary>
-                    <li><a href="pages/blog/sobrancelha.html">Design</a></li>
-                    <li><a href="pages/blog/sobrancelha.html">Design + Henna</a></li>
-                    <li><a href="pages/blog/sobrancelha.html">Brow Lamination</a></li>
+                    <li><a href="pages/blog/sobrancelha.php">Design</a></li>
+                    <li><a href="pages/blog/sobrancelha.php">Design + Henna</a></li>
+                    <li><a href="pages/blog/sobrancelha.php">Brow Lamination</a></li>
                 </details>
                 <br>
                 <details>
                     <summary>Massagem</summary>
-                    <li><a href="pages/blog/massagem.html">Relaxante</a></li>
-                    <li><a href="pages/blog/massagem.html">Modeladora</a></li>
-                    <li><a href="pages/blog/massagem.html">Drenagem linfática</a></li>
-                    <li><a href="pages/blog/massagem.html">Lipo modeladora</a></li>
+                    <li><a href="pages/blog/massagem.php">Relaxante</a></li>
+                    <li><a href="pages/blog/massagem.php">Modeladora</a></li>
+                    <li><a href="pages/blog/massagem.php">Drenagem linfática</a></li>
+                    <li><a href="pages/blog/massagem.php">Lipo modeladora</a></li>
                 </details>
                 <br>
                 <details>
                     <summary>Depilação</summary>
-                    <li><a href="pages/blog/depilacao.html">Vantagens</a></li>
-                    <li><a href="pages/blog/depilacao.html">Pós-depilação</a></li>
-                    <li><a href="pages/blog/depilacao.html">Cuidados</a></li>
+                    <li><a href="pages/blog/depilacao.php">Vantagens</a></li>
+                    <li><a href="pages/blog/depilacao.php">Pós-depilação</a></li>
+                    <li><a href="pages/blog/depilacao.php">Cuidados</a></li>
                 </details>
                 <br>
                 <details>
                     <summary>Limpeza de pele</summary>
-                    <li><a href="pages/blog/limpezadepele.html">Como funciona?</a></li>
-                    <li><a href="pages/blog/limpezadepele.html">Cuidados</a></li>
+                    <li><a href="pages/blog/limpezadepele.php">Como funciona?</a></li>
+                    <li><a href="pages/blog/limpezadepele.php">Cuidados</a></li>
                 </details>
                 <br>
                 <details>
                     <summary>Outros assuntos</summary>
-                    <li><a href="pages/blog/outros.html">Acne</a></li>
-                    <li><a href="pages/blog/outros.html">Cosméticos</a></li>
-                    <li><a href="pages/blog/outros.html">Biossegurança</a></li>
+                    <li><a href="pages/blog/outros.php">Acne</a></li>
+                    <li><a href="pages/blog/outros.php">Cosméticos</a></li>
+                    <li><a href="pages/blog/outros.php">Biossegurança</a></li>
                 </details>
                 <nav>
                     <h4>Redes sociais:</h4>
@@ -121,12 +124,12 @@
                 </nav>
                 <nav>
                     <h4>Informações:</h4>
-                    <a href="/pages/contato/contato.html">
+                    <a href="/pages/contact/contact.php">
                         <i class="fa-solid fa-user"></i>
                         <span>Contato</span>
                     </a><br>
                     <br>
-                    <a href="/pages/sobre/sobre.html">
+                    <a href="/pages/about/about.php">
                         <i class="fa-fw fa-solid fa-circle-info"></i>
                         <span>Sobre</span>
                     </a>
@@ -141,8 +144,8 @@
                 </a>
 
                 <div class="policies">
-                    &copy; 2022 Espaço JB
-                    <a href="pages/privacidade/privacidade.html">Políticas de Privacidade</a>
+                    &copy; 2022 <?php echo $c['sitename']?>
+                    <a href="pages/privacy/privacy.php">Políticas de Privacidade</a>
                 </div>
 
                 <a class="arrow" href="#top">
@@ -155,5 +158,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/script.js"></script>
 </body>
-
 </html>

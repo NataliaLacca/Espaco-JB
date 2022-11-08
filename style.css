@@ -6,8 +6,7 @@
   outline: none;
 }
 
-html,
-body {
+html, body {
   position: relative;
   margin: 0;
   padding: 0;
@@ -15,30 +14,26 @@ body {
   font-size: 16px;
 }
 
-/* Links */
 a {
   color: rgb(151, 93, 117);
   text-decoration: none;
 }
 
-/* Quando o mouse passar sobre */
 a:hover {
   color: purple;
   text-decoration: none;
 }
 
-/* Fundo do site */
 body {
   background-attachment: fixed;
   background-color: rgba(222, 176, 176, 0);
-  background-image: url(./src/picture/background/abstract_pink_14.png);
+  background-image: url(./src/pictures/background/abstract_pink_14.png);
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* Wrap */
 #wrap {
   position: relative;
   width: 100%;
@@ -84,7 +79,7 @@ body {
   color: rgb(151, 93, 117);
 }
 
-/* Slogan está oculto */
+/* Slogan oculto */
 #wrap>header span {
   display: block;
   padding-top: 15px;
@@ -147,7 +142,7 @@ body {
   }
 }
 
-/* Conteúdo */
+/* Conteúdo e aside */
 #wrap>main {
   display: flex;
   flex-direction: column;
