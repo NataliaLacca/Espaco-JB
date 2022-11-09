@@ -16,7 +16,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Espaço JB</title>
+    <title>Espaço JB - Página Inicial</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
         </header>
 
         <nav>
-            <a href="/" title="Página inicial">
+            <a href="/index.html" title="Página inicial">
                 <i class="fa-fw fa-solid fa-house-chimney"></i>
                 <span>Início</span>
             </a>
@@ -136,13 +136,14 @@
 
         <footer>
             <div id="ftop">
-                <a href="/" title="Página inicial">
+                <a class="home" href="/index.html" title="Página inicial">
                     <i class="fa-fw fa-solid fa-house-chimney"></i>
                 </a>
-
-                <div>&copy; 2022 Espaço JB</div>
-
-                <a href="#top">
+                <div class="policies">
+                    &copy; 2022 Espaço JB
+                    <a href="pages/privacidade/privacidade.html">Políticas de Privacidade</a>
+                </div>
+                <a class="arrow" href="#top">
                     <i class="fa-fw fa-solid fa-circle-up"></i>
                 </a>
             </div>
@@ -152,5 +153,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/script.js"></script>
 </body>
-
 </html>

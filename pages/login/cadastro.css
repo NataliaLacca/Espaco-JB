@@ -31,7 +31,7 @@ a:hover {
 body {
     background-attachment: fixed;
     background-color: rgba(222, 176, 176, 0);
-    background-image: url(../../src/picture/background/abstract_pink_14.png);
+    background-image: url(../../src/picture/background/abstract_pink_10.jpg);
     width: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +58,6 @@ body {
     background-size: cover;
     border-radius: 10px;
     justify-content: space-between;
-    margin: 8px;
     margin-bottom: 0;
     display: flex;
     align-items: center;
@@ -69,7 +68,7 @@ body {
     display: block;
     border-radius: 15px;
     height: 100px;
-    margin: 8px 12px 8px 8px;
+    margin: 8px 12px 8px 12px;
 }
 
 /* Título */
@@ -130,7 +129,7 @@ body {
     margin-top: 3px;
 }
 
-/* Ajusta menu em telas maiores */
+/* Ajusta menu em telas menores */
 @media (min-width: 480px) {
     #wrap>nav a {
         flex-direction: row;
@@ -184,10 +183,27 @@ li {
     padding-left: 15px;
 }
 
+/* Ajusta sumário em telas maiores */
+@media (min-width: 768px) {
+    #wrap>main {
+      flex-direction: row;
+    }
+  
+    #wrap>main article {
+      flex-grow: 1;
+    }
+  
+    #wrap>main aside {
+      margin: 0;
+      margin-right: 8px;
+      min-width: 220px;
+      max-width: 220px;
+    }
+  }
+
 /* Formulário */
 .formulario {
-    max-width: 500px;
-    padding: 10px;
+    max-width: 300px;
 }
 
 .field {
@@ -198,13 +214,16 @@ li {
 .field label,
 .field span {
     padding-left: 10px;
-    font-size: 1.1em;
+    font-size: 16px;
     display: block;
     width: 100%;
 }
 
+input[type=text],
+input[type=date],
 input[type=email],
-input[type=password] {
+input[type=password],
+input[type=file] {
     width: 100%;
     padding-left: 10px;
     height: 30px;
@@ -222,75 +241,75 @@ input[type=submit] {
     display: block;
     background-color: rgba(116, 92, 71, 0.322);
     height: 35px;
-    border: none;
+    border: 1px solid rgba(116, 92, 71, 0.534);
     outline: 0;
     cursor: pointer;
-    width: 100px;
     margin: 0 auto;
     text-align: center;
     border-radius: 15px;
 }
 
-@media (min-width: 768px) {
-    #wrap>main {
-        flex-direction: row;
-    }
-
-    #wrap>main article {
-        flex-grow: 1;
-    }
-
-    #wrap>main aside {
-        margin: 0;
-        margin-right: 8px;
-        min-width: 220px;
-        max-width: 220px;
-    }
-}
-
 /* Rodapé */
 #wrap>footer {
     background-color: rgba(251, 208, 251, 0);
-    border-radius: 8px;
-    margin: 8px;
+    /**border-radius: 8px;
+    margin: 8px;**/
     padding-top: 10px;
-}
-
-#ftop {
+  }
+  
+  #ftop {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 15px 5px 15px;
     /**border-bottom: 3px dotted rgb(151, 93, 117);**/
-}
-
-#ftop a {
+  }
+  
+  .policies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .home i {
     font-size: 24px;
-    padding: 4px;
+    padding-bottom: 4px;
     color: rgb(151, 93, 117);
-}
-
-#ftop a:hover {
+  }
+  
+  .home i:hover {
     color: purple;
-
-}
-
-#fbottom {
+  
+  }
+  
+  .arrow i {
+    font-size: 24px;
+    padding-bottom: 4px;
+    color: rgb(151, 93, 117);
+  }
+  
+  .arrow i:hover {
+    color: purple;
+  }
+  
+  #fbottom {
     display: flex;
     justify-content: space-around;
-}
-
-#fbottom h4 {
+  }
+  
+  #fbottom h4 {
     margin: 8px;
-}
-
-#fbottom a {
+  }
+  
+  #fbottom a {
     display: block;
     align-items: center;
     justify-content: center;
     padding: 8px 8px 8px 16px;
-}
-
-#wrap>span {
+  }
+  
+  #wrap>span {
     display: block;
     font-size: 0.1px;
-}
+  }

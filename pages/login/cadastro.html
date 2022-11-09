@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Espaço JB</title>
+    <title>Espaço JB - Cadastro</title>
 </head>
 
 <body>
@@ -24,17 +24,21 @@
         </header>
 
         <nav>
-            <a href="/" title="Página inicial">
+            <a href="/index.html" title="Página inicial">
                 <i class="fa-fw fa-solid fa-house-chimney"></i>
                 <span>Início</span>
             </a>
-            <a href="/pages/contato/contato.html">
-                <i class="fa-solid fa-user"></i>
-                <span>Contato</span>
+            <a href="../blog/blog.html">
+                <i class="fa-solid fa-blog"></i>
+                <span>Blog</span>
             </a>
-            <a href="/pages/sobre/sobre.html">
-                <i class="fa-fw fa-solid fa-circle-info"></i>
-                <span>Sobre</span>
+            <a href="../agenda/agenda.html">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Agenda</span>
+            </a>
+            <a href="login.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Login</span>
             </a>
         </nav>
 
@@ -45,23 +49,27 @@
                 <form action="enviar-email.php" class="formulario" method="post">
                     <div class="field">
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome e sobrenome*" required>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome e sobrenome*" maxlength="30" required>
                     </div>
                     <div class="field">
                         <label for="telefone">Telefone:</label>
-                        <input type="text" id="telefone" name="telefone" placeholder="Digite seu número*" required>
+                        <input type="text" id="telefone" name="telefone" placeholder="Digite seu número*" minlength="11" maxlength="15" required>
                     </div>
                     <div class="field">
                         <label for="date">Data de nascimento:</label>
-                        <input type="date" name="nascimento">
+                        <input type="date" name="birth" required>
                     </div>
                     <div class="field">
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail*" required>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail*" maxlength="40" required>
                     </div>
                     <div class="field">
                         <label for="password">Senha:</label>
-                        <input type="password" id="password" name="password" placeholder="Crie uma senha*" required>
+                        <input type="password" id="password" name="password" placeholder="Crie uma senha*" minlength="8" maxlength="12" required>
+                    </div>
+                    <div class="field">
+                        <label for="file">Carregue uma foto:</label>
+                        <input type="file" id="image" name="image">
                     </div>
                     <input type="submit" name="acao" value="Efetuar cadastro">
                 </form>
@@ -73,37 +81,37 @@
                 </header>
                 <details>
                     <summary>Sobrancelha</summary>
-                    <li><a href="pages/blog/sobrancelha.html">Design</a></li>
-                    <li><a href="pages/blog/sobrancelha.html">Design + Henna</a></li>
-                    <li><a href="pages/blog/sobrancelha.html">Brow Lamination</a></li>
+                    <li><a href="../blog/sobrancelha.html">Design</a></li>
+                    <li><a href="../blog/sobrancelha.html">Design + Henna</a></li>
+                    <li><a href="../blog/sobrancelha.html">Brow Lamination</a></li>
                 </details>
                 <br>
                 <details>
                     <summary>Massagem</summary>
-                    <li><a href="pages/blog/massagem.html">Relaxante</a></li>
-                    <li><a href="pages/blog/massagem.html">Modeladora</a></li>
-                    <li><a href="pages/blog/massagem.html">Drenagem linfática</a></li>
-                    <li><a href="pages/blog/massagem.html">Lipo modeladora</a></li>
+                    <li><a href="../blog/massagem.html">Relaxante</a></li>
+                    <li><a href="../blog/massagem.html">Modeladora</a></li>
+                    <li><a href="../blog/massagem.html">Drenagem linfática</a></li>
+                    <li><a href="../blog/massagem.html">Lipo modeladora</a></li>
                 </details>
                 <br>
                 <details>
                     <summary>Depilação</summary>
-                    <li><a href="pages/blog/depilacao.html">Vantagens</a></li>
-                    <li><a href="pages/blog/depilacao.html">Pós-depilação</a></li>
-                    <li><a href="pages/blog/depilacao.html">Cuidados</a></li>
+                    <li><a href="../blog/depilacao.html">Vantagens</a></li>
+                    <li><a href="../blog/depilacao.html">Pós-depilação</a></li>
+                    <li><a href="../blog/depilacao.html">Cuidados</a></li>
                 </details>
                 <br>
                 <details>
                     <summary>Limpeza de pele</summary>
-                    <li><a href="pages/blog/limpezadepele.html">Como funciona?</a></li>
-                    <li><a href="pages/blog/limpezadepele.html">Cuidados</a></li>
+                    <li><a href="../blog/limpezadepele.html">Como funciona?</a></li>
+                    <li><a href="../blog/limpezadepele.html">Cuidados</a></li>
                 </details>
                 <br>
                 <details>
                     <summary>Outros assuntos</summary>
-                    <li><a href="pages/blog/outros.html">Acne</a></li>
-                    <li><a href="pages/blog/outros.html">Cosméticos</a></li>
-                    <li><a href="pages/blog/outros.html">Biossegurança</a></li>
+                    <li><a href="../blog/outros.html">Acne</a></li>
+                    <li><a href="../blog/outros.html">Cosméticos</a></li>
+                    <li><a href="../blog/outros.html">Biossegurança</a></li>
                 </details>
                 <nav>
                     <h4>Redes sociais:</h4>
@@ -116,18 +124,31 @@
                         <span>Whatsapp</span>
                     </a>
                 </nav>
+                <nav>
+                    <h4>Informações:</h4>
+                    <a href="../contato/contato.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Contato</span>
+                    </a><br>
+                    <br>
+                    <a href="../sobre/sobre.html">
+                        <i class="fa-fw fa-solid fa-circle-info"></i>
+                        <span>Sobre</span>
+                    </a>
+                </nav>
             </aside>
         </main>
 
         <footer>
             <div id="ftop">
-                <a href="/" title="Página inicial">
+                <a class="home" href="/" title="Página inicial">
                     <i class="fa-fw fa-solid fa-house-chimney"></i>
                 </a>
-
-                <div>&copy; 2022 Espaço JB</div>
-
-                <a href="#top">
+                <div class="policies">
+                    &copy; 2022 Espaço JB
+                    <a href="../privacidade/privacidade.html">Políticas de Privacidade</a>
+                </div>
+                <a class="arrow" href="#top">
                     <i class="fa-fw fa-solid fa-circle-up"></i>
                 </a>
             </div>
