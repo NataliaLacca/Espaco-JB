@@ -24,7 +24,7 @@ body {
 }
 
 .month ul li {
-    color: white;
+    color: rgb(80, 23, 75);
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
