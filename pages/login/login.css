@@ -205,7 +205,7 @@ li {
 form {
     background-color: rgba(248, 201, 242, 0.493);
     border-radius: 5px;
-    box-shadow: 20px 20px 50px 10px pink inset;;
+    box-shadow: 20px 20px 50px 10px pink inset;
 }
 
 input[type=text],
@@ -250,37 +250,38 @@ button:hover {
 img.avatar {
     width: 20%;
     border-radius: 20%;
+    padding-top: 20px;
 }
 
 .container {
     text-align: center;
-    padding: 40px;
+    padding: 20px;
 }
 
 span.psw {
-    display: flex;
-    text-align: center;
-    padding-top: 50px;
+    padding-left: 50px;
 }
 
 span.psw a {
-    padding-left: 5px;
+    padding-left: 2px;
 }
 
 @media screen and (max-width: 300px) {
+    form {
+        width: 100%;
+    }
+    
     span.psw {
         display: block;
         float: none;
-    }
-
-    .cancelbtn {
-        width: 100%;
-    }
+    }   
 }
 
 .cadastro {
+    padding-left: 10px;
     padding-top: 50px;
 }
+
 /* Fim do formulário */
 
 /* Rodapé */

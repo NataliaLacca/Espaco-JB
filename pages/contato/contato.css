@@ -236,6 +236,7 @@ textarea {
   padding: 5px 0 5px 12px;
   border-radius: 15px;
   border: 1px solid rgba(116, 92, 71, 0.534);
+  background-color: white;
 }
 
 input[type=range] {
