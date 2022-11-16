@@ -48,26 +48,24 @@
                 <p>Faça seu login aqui:</p>
                 <form action="action_page.php" method="post">
                     <div class="imgcontainer">
-                      <img src="../img_avatar.png" alt="Avatar" class="avatar">
-                    </div>                  
-                    <div class="container">
-                      <label for="uname"><b>Nome de Usuário</b></label>
-                      <input type="text" placeholder="Enter Username" name="uname" required>
-                  
-                      <label for="psw"><b>Senha</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw" required>
-                  
-                      <button type="submit">Login</button>
-                      <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                      </label>
-                    </div>                  
-                    <div class="container" style="background-color:#f1f1f1">
-                      <button type="button" class="cancelbtn">Cancelar</button>
-                      <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
+                        <img src="../../src/picture/img_avatar.png" alt="Avatar" class="avatar">
                     </div>
-                  </form>
-                <p class="cadastro">Caso não tenha cadastro, <a href="cadastro.html">Clique aqui</a>.</p>
+                    <div class="container">
+                        <label for="uname"><b>Nome de Usuário</b></label>
+                        <input type="text" name="uname" placeholder="Digite o usuário*" required>
+
+                        <label for="psw"><b>Senha</b></label>
+                        <input type="password" name="psw" placeholder="Digite sua senha*" required>
+                        <button type="submit">Login</button>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="remember" checked="checked"> Lembre-me
+                            </label>
+                        </div>
+                        <span class="psw">Esqueceu sua <a href="#"> senha?</a></span>
+                    </div>
+                </form>
+                <p class="cadastro">Caso não tenha cadastro, <a href="cadastro.html">clique aqui</a>.</p>
             </article>
 
             <aside>
@@ -153,4 +151,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/script.js"></script>
 </body>
+
 </html>
