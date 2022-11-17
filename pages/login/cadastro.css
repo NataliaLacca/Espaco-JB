@@ -186,24 +186,27 @@ li {
 /* Ajusta sumário em telas maiores */
 @media (min-width: 768px) {
     #wrap>main {
-      flex-direction: row;
+        flex-direction: row;
     }
-  
+
     #wrap>main article {
-      flex-grow: 1;
+        flex-grow: 1;
     }
-  
+
     #wrap>main aside {
-      margin: 0;
-      margin-right: 8px;
-      min-width: 220px;
-      max-width: 220px;
+        margin: 0;
+        margin-right: 8px;
+        min-width: 220px;
+        max-width: 220px;
     }
-  }
+}
 
 /* Formulário */
 .formulario {
     max-width: 300px;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
 }
 
 .field {
@@ -223,6 +226,16 @@ input[type=text],
 input[type=date],
 input[type=email],
 input[type=password],
+input[type=file] {
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(116, 92, 71, 0.534);
+    outline: none;
+}
+
 input[type=file] {
     width: 100%;
     padding-left: 10px;
@@ -254,11 +267,12 @@ input[type=submit] {
 }
 
 .registerbtn {
-    background-color: #04AA6D;
+    background-color: rgba(117, 71, 56, 0.555);
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
     border: none;
+    border-radius: 15px;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
@@ -278,61 +292,61 @@ input[type=submit] {
     /**border-radius: 8px;
     margin: 8px;**/
     padding-top: 10px;
-  }
-  
-  #ftop {
+}
+
+#ftop {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 15px 5px 15px;
     /**border-bottom: 3px dotted rgb(151, 93, 117);**/
-  }
-  
-  .policies {
+}
+
+.policies {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-  
-  .home i {
+}
+
+.home i {
     font-size: 24px;
     padding-bottom: 4px;
     color: rgb(151, 93, 117);
-  }
-  
-  .home i:hover {
+}
+
+.home i:hover {
     color: purple;
-  
-  }
-  
-  .arrow i {
+
+}
+
+.arrow i {
     font-size: 24px;
     padding-bottom: 4px;
     color: rgb(151, 93, 117);
-  }
-  
-  .arrow i:hover {
+}
+
+.arrow i:hover {
     color: purple;
-  }
-  
-  #fbottom {
+}
+
+#fbottom {
     display: flex;
     justify-content: space-around;
-  }
-  
-  #fbottom h4 {
+}
+
+#fbottom h4 {
     margin: 8px;
-  }
-  
-  #fbottom a {
+}
+
+#fbottom a {
     display: block;
     align-items: center;
     justify-content: center;
     padding: 8px 8px 8px 16px;
-  }
-  
-  #wrap>span {
+}
+
+#wrap>span {
     display: block;
     font-size: 0.1px;
-  }
+}
