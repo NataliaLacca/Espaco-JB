@@ -11,7 +11,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Sofia;
   font-size: 16px;
 }
 
@@ -151,6 +151,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  font-size: Akaya Kanadaka;
 }
 
 #wrap>main article,
@@ -273,8 +274,6 @@ li {
 /* Rodapé */
 #wrap>footer {
   background-color: rgba(251, 208, 251, 0);
-  /**border-radius: 8px;
-  margin: 8px;**/
   padding-top: 10px;
 }
 
@@ -283,7 +282,6 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 0 15px 5px 15px;
-  /**border-bottom: 3px dotted rgb(151, 93, 117);**/
 }
 
 .policies {

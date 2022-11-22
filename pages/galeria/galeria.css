@@ -171,6 +171,75 @@ body {
   margin-top: 8px;
 }
 
+.slideshow-container {
+  max-width:400px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 summary {
   cursor: pointer;
 }
@@ -201,77 +270,9 @@ li {
   }
 }
 
-/* Formulário */
-.formulario {
-  max-width: 300px;
-}
-
-.field {
-  width: 100%;
-  margin: 15px 0;
-}
-
-.field label,
-.field span {
-  padding-left: 10px;
-  font-size: 16px;
-  display: block;
-  width: 100%;
-}
-
-input[type=text],
-input[type=email],
-textarea {
-  width: 100%;
-  padding-left: 10px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 15px;
-  border: 1px solid rgba(116, 92, 71, 0.534);
-  outline: none;
-}
-
-.satis {
-  display: flex;
-  padding: 5px 0 5px 12px;
-  border-radius: 15px;
-  border: 1px solid rgba(116, 92, 71, 0.534);
-  background-color: white;
-}
-
-input[type=range] {
-  margin-right: 11px;
-}
-
-input#nao {
-  margin-left: 30px;
-}
-
-textarea {
-  line-height: 20px;
-  padding: 10px;
-  height: 90px;
-  resize: none;
-}
-
-input[type=submit] {
-  display: block;
-  background-color: rgba(117, 71, 56, 0.329);
-  height: 35px;
-  border: none;
-  outline: 0;
-  cursor: pointer;
-  width: 80px;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 15px;
-}
-
 /* Rodapé */
 #wrap>footer {
   background-color: rgba(251, 208, 251, 0);
-  /**border-radius: 8px;
-  margin: 8px;**/
   padding-top: 10px;
 }
 
@@ -280,7 +281,6 @@ input[type=submit] {
   align-items: center;
   justify-content: space-between;
   padding: 0 15px 5px 15px;
-  /**border-bottom: 3px dotted rgb(151, 93, 117);**/
 }
 
 .policies {
