@@ -11,7 +11,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Sofia;
   font-size: 16px;
 }
 
@@ -24,14 +24,14 @@ a {
 /* Quando o mouse passar sobre */
 a:hover {
   color: purple;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Fundo do site */
 body {
   background-attachment: fixed;
   background-color: rgba(222, 176, 176, 0);
-  background-image: url(../../src/picture/background/abstract_pink_14.png);
+  background-image: url(../../src/picture/background/abstract_pink_10.jpg);
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +58,6 @@ body {
   background-size: cover;
   border-radius: 10px;
   justify-content: space-between;
-  margin: 8px;
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -69,7 +68,7 @@ body {
   display: block;
   border-radius: 15px;
   height: 100px;
-  margin: 8px 12px 8px 8px;
+  margin: 8px 12px 8px 12px;
 }
 
 /* Título */
@@ -94,9 +93,9 @@ body {
 
 /* Menu principal */
 #wrap>nav {
-  background-color: rgb(255,228,225);
+  background-color: rgb(255, 228, 225);
   border-radius: 8px;
-  box-shadow: 2px 2px 20px 5px rgba(182, 137, 156, 0.781);
+  box-shadow: 2px 2px 20px 5px rgb(182, 137, 156);
   margin: 8px;
   display: flex;
   align-items: center;
@@ -105,7 +104,7 @@ body {
 
 #wrap>nav a {
   padding: 8px 8px;
-  color: rgb(207, 142, 169);
+  color: rgb(204, 109, 147);
   transition: 2ms;
   display: flex;
   flex-direction: column;
@@ -154,12 +153,20 @@ body {
   flex-grow: 1;
 }
 
-#wrap>main article,
-#wrap>main aside {
-  background-color: rgb(255,228,225);
+#wrap>main article {
+  background-color: rgb(255, 228, 225);
   overflow: auto;
   border-radius: 8px;
-  box-shadow: 0px 2px 20px 5px rgba(207, 142, 169, 0.459);
+  box-shadow: 0px 2px 50px 5px rgba(207, 142, 169, 0.555);
+  margin: 0 8px;
+  padding: 0 16px 20px;
+}
+
+#wrap>main aside {
+  background-color: rgb(255, 228, 225);
+  overflow: auto;
+  border-radius: 8px;
+  box-shadow: 0px 2px 20px 5px rgb(207, 142, 169);
   margin: 0 8px;
   padding: 0 16px 20px;
 }
@@ -172,6 +179,34 @@ body {
   margin-top: 8px;
 }
 
+@media (max-width: 425px) {
+  .content {
+    flex-direction: column;    
+  }
+
+  .posts-header,
+  .posts-content,
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary:hover {
+  color: purple;
+}
+
+li {
+  padding-left: 15px;
+}
+
+/* Ajusta sumário em telas maiores */
 @media (min-width: 768px) {
   #wrap>main {
     flex-direction: row;
@@ -187,18 +222,6 @@ body {
     min-width: 220px;
     max-width: 220px;
   }
-}
-
-summary {
-  cursor: pointer;
-}
-
-summary:hover {
-  color: purple;
-}
-
-li {
-  padding-left: 15px;
 }
 
 #posts {
@@ -217,8 +240,6 @@ li {
 /* Rodapé */
 #wrap>footer {
   background-color: rgba(251, 208, 251, 0);
-  border-radius: 8px;
-  margin: 8px;
   padding-top: 10px;
 }
 
@@ -226,18 +247,35 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /**border-bottom: 3px dotted rgb(151, 93, 117);**/
+  padding: 0 15px 5px 15px;
 }
 
-#ftop a {
+.policies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home i {
   font-size: 24px;
-  padding: 4px;
+  padding-bottom: 4px;
   color: rgb(151, 93, 117);
 }
 
-#ftop a:hover {
+.home i:hover {
   color: purple;
-  
+
+}
+
+.arrow i {
+  font-size: 24px;
+  padding-bottom: 4px;
+  color: rgb(151, 93, 117);
+}
+
+.arrow i:hover {
+  color: purple;
 }
 
 #fbottom {

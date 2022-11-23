@@ -83,7 +83,7 @@ body {
   color: rgb(151, 93, 117);
 }
 
-/* Slogan está oculto */
+/* Slogan */
 #wrap>header span {
   display: block;
   padding-top: 15px;
@@ -129,29 +129,11 @@ body {
   margin-top: 3px;
 }
 
-/* Ajusta menu em telas menores */
-@media (min-width: 480px) {
-  #wrap>nav a {
-    flex-direction: row;
-  }
-
-  #wrap>nav i {
-    font-size: 19px;
-  }
-
-  #wrap>nav span {
-    display: inline-block;
-    margin-top: 0;
-    margin-left: 4px;
-  }
-}
-
 /* Conteúdo */
 #wrap>main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  font-size: Akaya Kanadaka;
 }
 
 #wrap>main article,
@@ -205,8 +187,7 @@ body {
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-.text {
+/*.text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -214,7 +195,7 @@ body {
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
+}*/
 
 .dot {
   cursor: pointer;
@@ -253,6 +234,23 @@ li {
   padding-left: 15px;
 }
 
+/* Ajusta menu em telas menores */
+@media (min-width: 480px) {
+  #wrap>nav a {
+    flex-direction: row;
+  }
+
+  #wrap>nav i {
+    font-size: 19px;
+  }
+
+  #wrap>nav span {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 4px;
+  }
+}
+
 /* Ajusta sumário em telas maiores */
 @media (min-width: 768px) {
   #wrap>main {
@@ -284,13 +282,6 @@ li {
   padding: 0 15px 5px 15px;
 }
 
-.policies {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .home i {
   font-size: 24px;
   padding-bottom: 4px;
@@ -300,6 +291,13 @@ li {
 .home i:hover {
   color: purple;
 
+}
+
+.policies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .arrow i {
