@@ -204,6 +204,7 @@ li {
 /* Formulário */
 .formulario {
   max-width: 300px;
+  text-align: center;
 }
 
 .field {
@@ -228,6 +229,7 @@ textarea {
   border-radius: 15px;
   border: 1px solid rgba(116, 92, 71, 0.534);
   outline: none;
+  text-align: center;
 }
 
 input[type=tel] {
@@ -239,6 +241,7 @@ input[type=tel] {
   border-radius: 15px;
   border: 1px solid rgba(116, 92, 71, 0.534);
   outline: none;
+  text-align: center;
 }
 
 .satis {

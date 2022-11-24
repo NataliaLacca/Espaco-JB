@@ -2,22 +2,21 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="galeria.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Akaya Kanadaka' rel='stylesheet'>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="galeria.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Akaya Kanadaka" rel="stylesheet" />
     <title>Espaço JB - Galeria</title>
 </head>
 
 <body>
     <a id="top"></a>
     <div id="wrap">
-
         <header>
-            <a href="/index.html" title="Página inicial">
-                <img src="../../src/logo/logo02.jpg" alt="Logo">
+            <a href="../../index.html" title="Página inicial">
+                <img src="../../src/logo/logo02.jpg" alt="Logo" />
             </a>
             <h3>
                 Espaço Jessica Bengaly
@@ -46,52 +45,101 @@
 
         <main>
             <article>
-                <h3>Galeria de serviços</h3>
-                <div class="container">
-                    <div class="mySlides">
-                        <img src="../../src/picture/img_exemp/cachoeira.jpg" style="width:100%">
-                    </div>                  
-                    <div class="mySlides">
-                        <img src="../../src/picture/img_exemp/luzcinza.jpg" style="width:100%">
-                    </div>                  
-                    <div class="mySlides">
-                        <img src="../../src/picture/img_exemp/ondas.jpg" style="width:100%">
-                    </div>                  
-                    <div class="mySlides">
-                        <img src="../../src/picture/img_exemp/panorama_verao.jpg" style="width:100%">
-                    </div>                  
-                    <div class="mySlides">
-                        <img src="../../src/picture/img_exemp/pelicanos.jpg" style="width:100%">
-                    </div>                  
-                    <div class="mySlides">
-                        <img src="../../src/picture/img_exemp/praia.jpg" style="width:100%">
+                <h3>Serviços do Espaço JB</h3>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')">Mostrar tudo</button>
+                    <button class="btn" onclick="filterSelection('sobrancelha')">Sobrancelha</button>
+                    <button class="btn" onclick="filterSelection('massagem')">Massagem</button>
+                    <button class="btn" onclick="filterSelection('depilacao')">Depilação</button>
+                    <button class="btn" onclick="filterSelection('limpeza')">Limpeza de pele</button>
+                </div>
+                <div class="row">
+                    <div class="column sobrancelha">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Sobrancelha" style="width: 100%" />
+                            <h4>Sobrancelha</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
                     </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    <div class="caption-container">
-                      <p id="caption"></p>
+                    <div class="column sobrancelha">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Sobrancelha" style="width: 100%" />
+                            <h4>Sobrancelha</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
                     </div>
-                    <div class="row">
-                      <div class="column">
-                        <img class="demo cursor" src="../../src/picture/img_exemp/cachoeira.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-                      </div>
-                      <div class="column">
-                        <img class="demo cursor" src="../../src/picture/img_exemp/luzcinza.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-                      </div>
-                      <div class="column">
-                        <img class="demo cursor" src="../../src/picture/img_exemp/ondas.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-                      </div>
-                      <div class="column">
-                        <img class="demo cursor" src="../../src/picture/img_exemp/panorama_verao.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-                      </div>
-                      <div class="column">
-                        <img class="demo cursor" src="../../src/picture/img_exemp/pelicanos.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-                      </div>
-                      <div class="column">
-                        <img class="demo cursor" src="../../src/picture/img_exemp/praia.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-                      </div>
+                    <div class="column sobrancelha">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Sobrancelha" style="width: 100%" />
+                            <h4>Sobrancelha</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
                     </div>
-                  </div>
+
+                    <div class="column massagem">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Massagem" style="width: 100%" />
+                            <h4>Massagem</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column massagem">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Massagem" style="width: 100%" />
+                            <h4>Massagem</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column massagem">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Massagem" style="width: 100%" />
+                            <h4>Massagem</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column depilacao">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Depilação" style="width: 100%" />
+                            <h4>Depilação</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column depilacao">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Depilação" style="width: 100%" />
+                            <h4>Depilação</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column depilacao">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Depilação" style="width: 100%" />
+                            <h4>Depilação</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column limpeza">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Limpeza de pele" style="width: 100%" />
+                            <h4>Limpeza de pele</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column limpeza">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Limpeza de pele" style="width: 100%" />
+                            <h4>Limpeza de pele</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column limpeza">
+                        <div class="content">
+                            <img src="../../src/picture/img_exemp/cachoeira.jpg" alt="Limpeza de pele" style="width: 100%" />
+                            <h4>Limpeza de pele</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                </div>
             </article>
 
             <aside>
@@ -104,7 +152,7 @@
                     <li><a href="../blog/sobrancelha.html">Design + Henna</a></li>
                     <li><a href="../blog/sobrancelha.html">Brow Lamination</a></li>
                 </details>
-                <br>
+                <br />
                 <details>
                     <summary>Massagem</summary>
                     <li><a href="../blog/massagem.html">Relaxante</a></li>
@@ -112,20 +160,20 @@
                     <li><a href="../blog/massagem.html">Drenagem linfática</a></li>
                     <li><a href="../blog/massagem.html">Lipo modeladora</a></li>
                 </details>
-                <br>
+                <br />
                 <details>
                     <summary>Depilação</summary>
                     <li><a href="../blog/depilacao.html">Vantagens</a></li>
                     <li><a href="../blog/depilacao.html">Pós-depilação</a></li>
                     <li><a href="../blog/depilacao.html">Cuidados</a></li>
                 </details>
-                <br>
+                <br />
                 <details>
                     <summary>Limpeza de pele</summary>
                     <li><a href="../blog/limpezadepele.html">Como funciona?</a></li>
                     <li><a href="../blog/limpezadepele.html">Cuidados</a></li>
                 </details>
-                <br>
+                <br />
                 <details>
                     <summary>Outros assuntos</summary>
                     <li><a href="../blog/outros.html">Acne</a></li>
@@ -136,8 +184,7 @@
                     <h4>Redes sociais:</h4>
                     <a href="https://www.instagram.com/jessicabengaly/" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a><br>
+                        <span>Instagram</span> </a><br />
                     <a href="/" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i>
                         <span>Whatsapp</span>
@@ -147,14 +194,12 @@
                     <h4>Informações:</h4>
                     <a href="../sobre/sobre.html">
                         <i class="fa-fw fa-solid fa-circle-info"></i>
-                        <span>Sobre</span>
-                    </a><br>
-                    <br>
+                        <span>Sobre</span> </a><br />
+                    <br />
                     <a href="../contato/contato.html">
                         <i class="fa-solid fa-user"></i>
-                        <span>Contato</span>
-                    </a><br>
-                    <br>
+                        <span>Contato</span> </a><br />
+                    <br />
                     <a href="galeria.html">
                         <i class="fa-solid fa-image"></i>
                         <span>Galeria</span>
@@ -182,5 +227,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="galeria.js"></script>
 </body>
-
 </html>
