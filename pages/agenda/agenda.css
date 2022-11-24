@@ -179,10 +179,6 @@ summary:hover {
   color: purple;
 }
 
-li {
-  padding-left: 15px;
-}
-
 /* Ajusta sumário em telas maiores */
 @media (min-width: 768px) {
   #wrap>main {
@@ -202,6 +198,10 @@ li {
 }
 
 /* Formulário */
+.form {
+  padding-left: 20px;
+}
+
 .formulario {
   max-width: 300px;
 }

@@ -8,7 +8,7 @@ ul {
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-family: Sofia;
 }
 
 .month {
@@ -54,7 +54,7 @@ body {
 }
 
 .days {
-    padding: 10px 0;
+    padding: 15px 0;
     background: rgb(238, 238, 238);
     margin: 0;
 }
@@ -83,7 +83,6 @@ body {
 
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
-
     .weekdays li,
     .days li {
         width: 13.1%;
@@ -91,7 +90,6 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-
     .weekdays li,
     .days li {
         width: 12.5%;
@@ -103,7 +101,6 @@ body {
 }
 
 @media screen and (max-width: 290px) {
-
     .weekdays li,
     .days li {
         width: 12.2%;
