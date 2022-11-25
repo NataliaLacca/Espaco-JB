@@ -13,10 +13,10 @@
 <style>
     #regForm {
         margin: 100px auto;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
-        width: 70%;
-        min-width: 300px;
+        font-family: Sofia;
+        font-size: 16px;
+        width: 80%;
+        max-width: 320px;
     }
 
     .cadas {
@@ -27,7 +27,7 @@
         padding: 10px;
         width: 100%;
         font-size: 16px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Sofia;
         border-radius: 15px;
         border: 1px solid rgba(116, 92, 71, 0.534);
     }
@@ -36,7 +36,7 @@
         padding: 10px;
         width: 100%;
         font-size: 16px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Sofia;
         border-radius: 15px;
         border: 1px solid rgba(116, 92, 71, 0.534);
     }
@@ -55,7 +55,7 @@
         border: none;
         padding: 10px 20px;
         font-size: 16px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Akaya Kanadaka;
         cursor: pointer;
         border-radius: 15px;
     }
@@ -124,7 +124,7 @@
         <main>
             <article>
                 <h3>Bem-vinda ao seu Espaço de Beleza!</h3>
-                <form id="regForm" action="action_page.php">
+                <form id="regForm" action="action_page.php" method="post">
                     <h3 class="cadas">Cadastre-se:</h3>
                     <div class="tab">Nome:
                         <p><input placeholder="Primeiro nome" oninput="this.className = ''" name="fname" maxlength="10">
@@ -133,19 +133,16 @@
                     </div>
                     <div class="tab">Informações de contato:
                         <p><input placeholder="E-mail" oninput="this.className = ''" name="email" maxlength="30"></p>
-                        <p><input placeholder="Celular" oninput="this.className = ''" name="phone"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></p>
+                        <p><input placeholder="(21)99999-999" maxlength="14" onkeyup="handlePhone(event)" oninput="this.className = ''" name="phone"></p>
                     </div>
                     <div class="tab">Aniversário (apenas números):
-                        <p><input placeholder="dia" oninput="this.className = ''" name="dd" maxlength="2"></p>
-                        <p><input placeholder="mês" oninput="this.className = ''" name="nn" maxlength="2"></p>
-                        <p><input placeholder="ano" oninput="this.className = ''" name="yyyy" maxlength="4"></p>
+                        <p><input placeholder=" dia" oninput="this.className = ''" name="dd" maxlength="2"></p>
+                        <p><input placeholder=" mês" oninput="this.className = ''" name="nn" maxlength="2"></p>
+                        <p><input placeholder=" ano" oninput="this.className = ''" name="yyyy" maxlength="4"></p>
                     </div>
                     <div class="tab">Informações de login:
-                        <p><input placeholder="Nome de usuário" oninput="this.className = ''" name="uname"
-                                maxlength="12"></p>
-                        <p><input placeholder="Senha" oninput="this.className = ''" name="pword" type="password"
-                                minlength="8" maxlength="12"></p>
+                        <p><input placeholder="Crie um nome de usuário" oninput="this.className = ''" name="uname" maxlength="12"></p>
+                        <p><input placeholder="Crie uma senha" oninput="this.className = ''" name="pword" type="password" minlength="8" maxlength="12"></p>
                     </div>
                     <div style="overflow:auto;">
                         <div style="float:right;">
@@ -301,6 +298,19 @@
                 x[i].className = x[i].className.replace(" active", "");
             }
             x[n].className += " active";
+        }
+
+        const handlePhone = (event) => {
+        let input = event.target
+        input.value = phoneMask(input.value)
+        }
+  
+        const phoneMask = (value) => {
+        if (!value) return ""
+        value = value.replace(/\D/g,'')
+        value = value.replace(/(\d{2})(\d)/,"($1) $2")
+        value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+        return value
         }
     </script>
 </body>

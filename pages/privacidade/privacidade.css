@@ -171,6 +171,11 @@ body {
   margin-top: 8px;
 }
 
+.privacy {
+  font-family: Akaya Kanadaka;
+  font-size: 17px;
+}
+
 summary {
   cursor: pointer;
 }

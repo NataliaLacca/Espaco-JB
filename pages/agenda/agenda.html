@@ -56,7 +56,7 @@
                             <li class="prev">&#10094;</li>
                             <li class="next">&#10095;</li>
                             <li>
-                                AGOSTO<br>
+                                NOVEMBRO<br>
                                 <span style="font-size:18px">2022</span>
                             </li>
                         </ul>
@@ -103,60 +103,108 @@
                         <li><span class="noactive">28</span></li>
                         <li><span class="active">29</span></li>
                         <li><span class="active">30</span></li>
-                        <li><span class="active">31</span></li>
                     </ul>
                     <h6 style="color: rgb(151, 93, 117);">Dias disponíveis: verde; Dias não disponíveis: marrom.</h6>
 
                     <form class="form">
                         <h4>Preencha as informações a seguir:</h4>                        
-                        Dia:
-                        <input type="date">
-                        Horário:
-                        <input type="time">
-
+                        Dia e horário(das 08:00 às 18:00): 
+                        <input type="date" id="date" name="servico" min="2022-08-01" max="2022-08-31">
+                        <input type="time" id="hora-cons" name="hora-cons" min="08:00" max="18:00">
+                        <span class="validacao"></span>
                         <h4>Selecione apenas o(s) serviço(s) desejado(s):</h4>
                         Sobrancelha:<br>
-                        <select>
+                        <select id="servico" name="servico">
                             <option value="selecionar">Selecionar</option>
-                            <option value="depilacao22">Design</option>
-                            <option value="depilacao23">Design + Henna</option>
-                            <option value="depilacao24">Brow Lamination</option>
+                            <option value="design">Design</option>
+                            <option value="henna">Design + Henna</option>
+                            <option value="brow">Brow Lamination</option>
                         </select><br>
                         <br>
                         Massagem relaxante:<br>
-                        <select>
+                        <select id="servico" name="servico">
                             <option value="selecionar">Selecionar</option>
-                            <option value="massagem1">30min</option>
-                            <option value="massagem2">1hora</option>
+                            <option value="mass1">Manual - 30min</option>
+                            <option value="mass2">Com associações - 30min</option>
+                            <option value="mass3">Manual - 1hora</option>
+                            <option value="mass4">Com associações - 1hora</option>
                         </select><br>
                         <br>
                         Massagem modeladora:<br>
-                        <select>
+                        <select id="servico" name="servico">
                             <option value="selecionar">Selecionar</option>
-                            <option value="massagem3">1 área</option>
-                            <option value="massagem4">2 áreas</option>
-                            <option value="massagem5">3 áreas</option>
+                            <option value="mass5">1 área</option>
+                            <option value="mass6">2 áreas</option>
+                            <option value="mass7">3 áreas</option>
                         </select><br>
                         <br>
                         Drenagem linfática:<br>
-                        <select>
+                        <select id="servico" name="servico">
                             <option value="selecionar">Selecionar</option>
-                            <option value="drenagem1">1 área</option>
-                            <option value="drenagem2">2 áreas</option>
-                            <option value="drenagem3">3 áreas</option>
+                            <option value="dren1">1 área</option>
+                            <option value="dren2">2 áreas</option>
+                            <option value="dren3">3 áreas</option>
                         </select><br>
                         <br>
                         Lipo modeladora:<br>
-                        <select>
+                        <select id="servico" name="servico">
                             <option value="selecionar">Selecionar</option>
                             <option value="lipo1">1 área</option>
                             <option value="lipo2">2 áreas</option>
                             <option value="lipo3">3 áreas</option>
                         </select><br>
                         <br>
-                        
+                        <input type="radio" id="servico" name="servico" value="limpe">
+                        <label for="limp">Limpeza de pele</label><br>
+                        <br>
+                        Depilação:<br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Abdomên</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Axila</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Braço</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Buço</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Churreia</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Costas</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Cox</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Face</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Costeleta</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Glúteo</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Lateral anal</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Mamilo</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Mento</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Nariz</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Orelha</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Peitoral</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Perna inteira</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Meia perna</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Tricotomia</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Virilha cavada</label><br>
+                        <input type="checkbox" id="servico" name="servico" value="depila">
+                        <label for="dep">Virilha simples</label><br>
+                        <br>
                         <input type="submit" name="acao" value="Enviar">
-                        <span>&nbsp;</span>
+                        <br>
+                        <p class="cadastro">Confira a tabela de preços, <a href="tabela.html">clique aqui</a></p>
+                        <p class="cadastro">Caso tenha dúvidas, entre em contato pelo <a href="/">Whatsapp</a></p>
                     </form>
             </article>
 

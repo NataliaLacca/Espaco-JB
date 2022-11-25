@@ -61,3 +61,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+function myFunction() {
+  document.getElementById("myLocalDate").required = true;
+  document.getElementById("demo").innerHTML = "The required property was set. The datetime field must now be filled out before submitting the form.";
+}

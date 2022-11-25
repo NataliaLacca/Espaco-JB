@@ -202,21 +202,19 @@ li {
 }
 
 /* Formulário */
-.formulario {
-  max-width: 300px;
+form {
+  padding: 10px;
   text-align: center;
+  max-width: 300px;
 }
 
 .field {
-  width: 100%;
-  margin: 15px 0;
+  padding: 8px;
 }
 
-.field label,
-.field span {
-  padding-left: 10px;
+label,
+span {
   font-size: 16px;
-  display: block;
   width: 100%;
 }
 
@@ -244,6 +242,10 @@ input[type=tel] {
   text-align: center;
 }
 
+input[type=range] {
+  width: 100%;
+}
+
 .satis {
   display: flex;
   text-align: center;
@@ -251,10 +253,6 @@ input[type=tel] {
   border-radius: 15px;
   border: 1px solid rgba(116, 92, 71, 0.534);
   background-color: white;
-}
-
-input#nao {
-  margin-left: 30px;
 }
 
 textarea {
@@ -265,16 +263,20 @@ textarea {
 }
 
 input[type=submit] {
-  display: block;
-  background-color: rgba(117, 71, 56, 0.329);
-  height: 35px;
+  background-color: rgba(151, 93, 117, 0.603);
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
-  outline: 0;
-  cursor: pointer;
-  width: 80px;
-  margin: 0 auto;
-  text-align: center;
   border-radius: 15px;
+  font-family: Akaya Kanadaka;
+  font-size: 18px;
+  cursor: pointer;
+  width: 90%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
 }
 
 /* Rodapé */
