@@ -214,18 +214,6 @@ summary:hover {
   padding-left: 20px;
 }
 
-.field {
-  width: 100%;
-}
-
-.field label,
-.field span {
-  padding-left: 10px;
-  font-size: 16px;
-  display: block;
-  width: 100%;
-}
-
 input[type=date] {
   width: 20%;
   padding-left: 5px;
@@ -246,37 +234,6 @@ input[type=time] {
   outline: none;
 }
 
-input#nao {
-  margin-left: 30px;
-}
-
-input[type=submit] {
-  display: block;
-  background-color: rgba(116, 92, 71, 0.322);
-  height: 35px;
-  border: none;
-  outline: 0;
-  cursor: pointer;
-  width: 80px;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 15px;
-}
-
-select {
-  width: 20%;
-  padding-left: 10px;
-  height: 25px;
-  line-height: 30px;
-  border-radius: 15px;
-  border: 1px solid rgba(116, 92, 71, 0.534);
-  outline: none;
-}
-
-input[type="number"] {
-  width: 100px;
-}
-
 input + span {
   padding-right: 30px;
 }
@@ -289,6 +246,97 @@ input:invalid+span:after {
 input:valid+span:after {
   content: '✓';
   padding-left: 5px;
+}
+
+.depi {
+  display: flex;
+}
+
+labelm1 {
+  padding-right: 10px;
+}
+labelm2 {
+  padding-right: 20px;
+}
+label1 {
+  padding-right: 56px;
+}
+label6 {
+  padding-right: 75px;
+}
+label11 {
+  padding-right: 36px;
+}
+label16 {
+  padding-right: 67px;
+}
+label20,
+label18 {
+  padding-right: 15px;
+}
+label17,
+label9 {
+  padding-right: 25px;
+}
+label12,
+label3 {
+  padding-right: 58px;
+}
+label7 {
+  padding-right: 88px;
+}
+label2 {
+  padding-right: 74px;
+}
+label13 {
+  padding-right: 50px;
+}
+label8 {
+  padding-right: 68px;
+}
+label14 {
+  padding-right: 45px;
+}
+label4 {
+  padding-right: 53px;
+}
+
+input[type=submit] {
+  background-color: rgba(151, 93, 117, 0.603);
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  font-family: Akaya Kanadaka;
+  font-size: 18px;
+  cursor: pointer;
+  width: 30%;
+}
+
+@media (max-width: 320px) {
+  input[type=date] {
+    width: 60%;
+  }
+  input[type=time] {
+    width: 40%;
+    padding-left: 5px;
+  }
+  input[type=checkbox],
+  label {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  input[type=submit] {
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  input[type=submit] {
+    width: 70%;
+  }
 }
 
 /* Rodapé */
