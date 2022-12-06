@@ -83,7 +83,7 @@ body {
   color: rgb(151, 93, 117);
 }
 
-/* Slogan */
+/* Slogan está oculto */
 #wrap>header span {
   display: block;
   padding-top: 15px;
@@ -129,6 +129,23 @@ body {
   margin-top: 3px;
 }
 
+/* Ajusta menu em telas menores */
+@media (min-width: 480px) {
+  #wrap>nav a {
+    flex-direction: row;
+  }
+
+  #wrap>nav i {
+    font-size: 19px;
+  }
+
+  #wrap>nav span {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 4px;
+  }
+}
+
 /* Conteúdo */
 #wrap>main {
   display: flex;
@@ -154,63 +171,16 @@ body {
   margin-top: 8px;
 }
 
-.slideshow-container {
-  max-width:400px;
-  position: relative;
-  margin: auto;
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
 }
 
-.mySlides {
-  display: none;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 summary {
@@ -219,27 +189,6 @@ summary {
 
 summary:hover {
   color: purple;
-}
-
-li {
-  padding-left: 15px;
-}
-
-/* Ajusta menu em telas menores */
-@media (min-width: 480px) {
-  #wrap>nav a {
-    flex-direction: row;
-  }
-
-  #wrap>nav i {
-    font-size: 19px;
-  }
-
-  #wrap>nav span {
-    display: inline-block;
-    margin-top: 0;
-    margin-left: 4px;
-  }
 }
 
 /* Ajusta sumário em telas maiores */
@@ -260,9 +209,141 @@ li {
   }
 }
 
+/* Formulário */
+.form {
+  padding-left: 20px;
+}
+
+input[type=date] {
+  width: 20%;
+  padding-left: 5px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(116, 92, 71, 0.534);
+  outline: none;
+}
+
+input[type=time] {
+  width: 15%;
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(116, 92, 71, 0.534);
+  outline: none;
+}
+
+input + span {
+  padding-right: 30px;
+}
+
+input:invalid+span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  content: '✓';
+  padding-left: 5px;
+}
+
+.depi {
+  display: flex;
+}
+
+labelm1 {
+  padding-right: 10px;
+}
+labelm2 {
+  padding-right: 20px;
+}
+label1 {
+  padding-right: 56px;
+}
+label6 {
+  padding-right: 75px;
+}
+label11 {
+  padding-right: 36px;
+}
+label16 {
+  padding-right: 67px;
+}
+label20,
+label18 {
+  padding-right: 15px;
+}
+label17,
+label9 {
+  padding-right: 25px;
+}
+label12,
+label3 {
+  padding-right: 58px;
+}
+label7 {
+  padding-right: 88px;
+}
+label2 {
+  padding-right: 74px;
+}
+label13 {
+  padding-right: 50px;
+}
+label8 {
+  padding-right: 68px;
+}
+label14 {
+  padding-right: 45px;
+}
+label4 {
+  padding-right: 53px;
+}
+
+input[type=submit] {
+  background-color: rgba(151, 93, 117, 0.603);
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  font-family: Akaya Kanadaka;
+  font-size: 18px;
+  cursor: pointer;
+  width: 30%;
+}
+
+@media (max-width: 320px) {
+  input[type=date] {
+    width: 60%;
+  }
+  input[type=time] {
+    width: 40%;
+    padding-left: 5px;
+  }
+  input[type=checkbox],
+  label {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  input[type=submit] {
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  input[type=submit] {
+    width: 70%;
+  }
+}
+
 /* Rodapé */
 #wrap>footer {
   background-color: rgba(251, 208, 251, 0);
+  /**border-radius: 8px;
+  margin: 8px;**/
   padding-top: 10px;
 }
 
@@ -271,6 +352,14 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 0 15px 5px 15px;
+  /**border-bottom: 3px dotted rgb(151, 93, 117);**/
+}
+
+.policies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .home i {
@@ -282,13 +371,6 @@ li {
 .home i:hover {
   color: purple;
 
-}
-
-.policies {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .arrow i {

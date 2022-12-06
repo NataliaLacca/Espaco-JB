@@ -1,40 +1,3 @@
-// passo 1 - pegar os elementos que representam a lista no HTML
-const list = document.querySelectorAll(".list");
-
-list.forEach(list => {
-    // passo 2 - identificar o clique no elemento da lista
-    list.addEventListener("click", function() {
-
-        if(list.classList.contains("selecionado")){
-            return;
-        }
-
-        selecionarList(list)
-        mostrarInformacoesDaList(list)
-    });
-});
-
-function selecionarList(list) {
-    // passo 3 - quando o usuário clicar, desmarcar a lista selecionada
-    const listSelecionado = document.querySelector(".list.selecionado");
-    listSelecionado.classList.remove("selecionado");
-
-    // passo 4 - marcar a lista clicada como selecionado
-    list.classList.add("selecionado");
-}
-
-function mostrarInformacoesDaList(list){
-    // passo 5 - esconder o conteúdo anterior
-    const informacaoSelecionado = document.querySelector(".informacao.selecionado");
-    informacaoSelecionado.classList.remove("selecionado");
-
-    // passo 6 - mostrar o conteúdo da aba selecionada
-    const idDoElementoDeInformacoesDaList = `informacao-${list.id}`
-
-    const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaList)
-    informacaoASerMostrada.classList.add("selecionado")
-}
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -50,19 +13,76 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
 
 function myFunction() {
   document.getElementById("myLocalDate").required = true;
   document.getElementById("demo").innerHTML = "The required property was set. The datetime field must now be filled out before submitting the form.";
+}
+
+const handlePhone = (event) => {
+  let input = event.target
+  input.value = phoneMask(input.value)
+}
+
+const phoneMask = (value) => {
+  if (!value) return ""
+  value = value.replace(/\D/g, '')
+  value = value.replace(/(\d{2})(\d)/, "($1) $2")
+  value = value.replace(/(\d)(\d{4})$/, "$1-$2")
+  return value
+}
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
