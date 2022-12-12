@@ -28,7 +28,7 @@ require_once 'header.php';
         </div>
         <div class="field">
             <label for="telefone">Celular (whatsapp):</label>
-            <input type="tel" id="phone" name="phone" placeholder="(21)90000-0000" maxlength="14" onkeyup="handlePhone(event)" required>
+            <input type="tel" id="phone" name="phone" placeholder="(21)99999-9999" maxlength="15" onkeyup="handlePhone(event)" required>
         </div>
         <div class="field">
             <label for="range">Defina seu nível de satisfação:</label>
@@ -45,6 +45,21 @@ require_once 'header.php';
         <input type="submit" name="acao" value="Enviar">
     </form>
 </article>
+
+<script>
+    const handlePhone = (event) => {
+        let input = event.target
+        input.value = phoneMask(input.value)
+    }
+
+    const phoneMask = (value) => {
+        if (!value) return ""
+        value = value.replace(/\D/g, '')
+        value = value.replace(/(\d{2})(\d)/, "($1) $2")
+        value = value.replace(/(\d)(\d{4})$/, "$1-$2")
+        return value
+    }
+</script>
 
 <?php
 require_once 'aside.php';

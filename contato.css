@@ -154,58 +154,14 @@ body {
   margin-top: 8px;
 }
 
-summary {
-  cursor: pointer;
-}
-
-summary:hover {
-  color: purple;
-}
-
-li {
-  padding-left: 15px;
-}
-
-/* Ajusta menu em telas menores */
-@media (min-width: 480px) {
-  #wrap>nav a {
-    flex-direction: row;
-  }
-
-  #wrap>nav i {
-    font-size: 19px;
-  }
-
-  #wrap>nav span {
-    display: inline-block;
-    margin-top: 0;
-    margin-left: 4px;
-  }
-}
-
-/* Ajusta sumário em telas maiores */
-@media (min-width: 768px) {
-  #wrap>main {
-    flex-direction: row;
-  }
-
-  #wrap>main article {
-    flex-grow: 1;
-  }
-
-  #wrap>main aside {
-    margin: 0;
-    margin-right: 8px;
-    min-width: 220px;
-    max-width: 220px;
-  }
-}
-
-/* Formulário */
 form {
   padding: 10px;
   text-align: center;
   max-width: 300px;
+  margin: 50px auto;
+  font-family: Sofia;
+  font-size: 16px;
+  width: 100%;
 }
 
 .field {
@@ -277,6 +233,53 @@ input[type=submit] {
 
 input[type=submit]:hover {
   opacity: 0.8;
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary:hover {
+  color: purple;
+}
+
+li {
+  padding-left: 15px;
+}
+
+/* Ajusta menu em telas menores */
+@media (min-width: 480px) {
+  #wrap>nav a {
+    flex-direction: row;
+  }
+
+  #wrap>nav i {
+    font-size: 19px;
+  }
+
+  #wrap>nav span {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 4px;
+  }
+}
+
+/* Ajusta sumário em telas maiores */
+@media (min-width: 768px) {
+  #wrap>main {
+    flex-direction: row;
+  }
+
+  #wrap>main article {
+    flex-grow: 1;
+  }
+
+  #wrap>main aside {
+    margin: 0;
+    margin-right: 8px;
+    min-width: 220px;
+    max-width: 220px;
+  }
 }
 
 /* Rodapé */

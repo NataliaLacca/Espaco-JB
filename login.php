@@ -19,7 +19,7 @@ require_once 'header.php';
     <h3>Bem-vinda ao seu Espaço de Beleza!</h3>
     <form action="action_page.php" method="post">
         <div class="imgcontainer">
-            <img src="src/img_avatar.png" alt="Avatar" class="avatar">
+            <img src="src/perfil_avatar2.png" alt="Avatar" class="avatar">
         </div>
         <div class="container">
             <label for="uname"><b>Nome de Usuário</b></label>

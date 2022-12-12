@@ -172,11 +172,11 @@ body {
 }
 
 #regForm {
-    margin: 100px auto;
+    margin: 50px auto;
     font-family: Sofia;
     font-size: 16px;
-    width: 80%;
-    max-width: 320px;
+    width: 100%;
+    max-width: 220px;
 }
 
 .cadas {
@@ -184,19 +184,29 @@ body {
 }
 
 input {
-    padding: 10px;
+    padding: 5px;
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     font-family: Sofia;
+    text-align: center;
     border-radius: 15px;
     border: 1px solid rgba(116, 92, 71, 0.534);
 }
 
-input [type=password] {
-    padding: 10px;
-    width: 100%;
-    font-size: 16px;
+input [type=file] {
+    padding: 50px;
+    width: 50%;
+    font-size: 18px;
     font-family: Sofia;
+    text-align: center;
+}
+
+input [type=password] {
+    padding: 30px;
+    width: 100%;
+    font-size: 18px;
+    font-family: Sofia;
+    text-align: center;
     border-radius: 15px;
     border: 1px solid rgba(116, 92, 71, 0.534);
 }
