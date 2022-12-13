@@ -50,6 +50,11 @@ require_once 'header.php';
             <span class="step"></span>
         </div>
     </form>
+    <div class="back">
+        <a class="arrow_back" href="login.php">
+            <i class="fa-solid fa-circle-left"></i>
+        </a>
+    </div>
 </article>
 
 <script>

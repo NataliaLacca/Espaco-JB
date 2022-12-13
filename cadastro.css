@@ -172,7 +172,7 @@ body {
 }
 
 #regForm {
-    margin: 50px auto;
+    margin: 30px auto;
     font-family: Sofia;
     font-size: 16px;
     width: 100%;
@@ -255,6 +255,12 @@ button:hover {
 
 .step.finish {
     background-color: rgb(4, 170, 109);
+}
+
+.arrow_back {
+    font-size: 30px;
+    padding-bottom: 4px;
+    color: rgb(151, 93, 117);
 }
 
 summary {
