@@ -32,8 +32,9 @@ require_once 'header.php';
             <p><input placeholder=" mês" oninput="this.className = ''" name="nn" id="nn" maxlength="2"></p>
             <p><input placeholder=" ano" oninput="this.className = ''" name="yyyy" id="yyyy" maxlength="4"></p>
         </div>
-        <div class="tab">Informações de login:
+        <div class="tab">Carregue uma foto de perfil:
             <p><input placeholder="Carregue uma foto" type="file" name="image" id="uimage"></p>
+            Informações de login:
             <p><input placeholder="Crie um nome de usuário" oninput="this.className = ''" name="uname" id="uname" maxlength="12"></p>
             <p><input placeholder="Crie uma senha" type="password" name="password" id="password" minlength="8" maxlength="12"></p>
         </div>
