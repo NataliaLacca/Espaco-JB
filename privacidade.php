@@ -129,6 +129,11 @@ require_once 'header.php';
             </p>
         </ol>
     </div>
+    <div class="back">
+        <a class="arrow_back" href="sobre.php">
+            <i class="fa-solid fa-circle-left"></i>
+        </a>
+    </div>
 </article>
 
 <?php

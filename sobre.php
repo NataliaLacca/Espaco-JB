@@ -32,6 +32,11 @@ require_once 'header.php';
         Que minhas mãos sejam os instrumentos para levar beleza e autoestima até
         todas vocês.</p>
     <h5>Conheça nossa <a href="privacidade.php">Política de Privacidade</a></h5>
+    <div class="back">
+        <a class="arrow_back" href="index.php">
+            <i class="fa-solid fa-circle-left"></i>
+        </a>
+    </div>
 </article>
 
 <?php

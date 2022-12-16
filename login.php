@@ -36,6 +36,11 @@ require_once 'header.php';
         </div>
     </form>
     <p class="cadastro">Caso não tenha cadastro, <a href="cadastro.php">clique aqui</a>.</p>
+    <div class="back">
+        <a class="arrow_back" href="index.php">
+            <i class="fa-solid fa-circle-left"></i>
+        </a>
+    </div>
 </article>
 
 <?php

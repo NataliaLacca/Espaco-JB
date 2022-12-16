@@ -56,10 +56,15 @@ require_once 'header.php';
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
         }
     </script>
-    <h3>Artigos</h3>
+    <div class="back">
+        <a class="arrow_back" href="blog.php">
+            <i class="fa-solid fa-circle-left"></i>
+        </a>
+        <h3>Artigos</h3>
+    </div>
     <br>
     <section id="posts" class="content-area">
         <article class="content">

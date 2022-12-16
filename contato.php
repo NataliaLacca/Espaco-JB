@@ -44,6 +44,11 @@ require_once 'header.php';
         </div>
         <input type="submit" name="acao" value="Enviar">
     </form>
+    <div class="back">
+        <a class="arrow_back" href="index.php">
+            <i class="fa-solid fa-circle-left"></i>
+        </a>
+    </div>
 </article>
 
 <script>

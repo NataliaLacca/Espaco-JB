@@ -88,6 +88,11 @@ require_once 'header.php';
             </header>
         </article>
     </section>
+    <div class="back">
+        <a class="arrow_back" href="index.php">
+            <i class="fa-solid fa-circle-left"></i>
+        </a>
+    </div>
 </article>
 
 <?php

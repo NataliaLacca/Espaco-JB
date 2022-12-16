@@ -235,6 +235,12 @@ input[type=submit]:hover {
   opacity: 0.8;
 }
 
+.arrow_back {
+  font-size: 24px;
+  padding-bottom: 4px;
+  color: rgb(151, 93, 117);
+}
+
 summary {
   cursor: pointer;
 }
